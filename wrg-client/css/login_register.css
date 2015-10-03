@@ -1,0 +1,284 @@
+.login-register-section{
+    background-color:rgb(218, 215, 214);
+    padding-left: 46px;
+    padding-right: 36px;
+    display: inline-block;
+    border-bottom: 13px solid rgb(239, 236,234);
+    box-sizing: border-box;
+    width: 960px;
+}
+#reset-register{
+    font-size: 23px;
+}
+#resetButton{
+    margin-left: 10px;
+}
+.register-visible{
+    display: block;
+}
+.login-wrapper{
+    display: none;
+}
+#passreset-section{
+    padding-bottom: 45px;
+}
+#login-form{
+    margin-top: 33px;
+    padding-bottom: 10px;
+}
+#reset-form{
+    margin-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#remember-txt{
+    font-weight: 300;
+    font-size: 16px;
+}
+.login-row{
+    display: block;
+    margin: 0 auto;
+}
+#cant-signin{
+    float: right;
+}
+#remember-forgot{
+    margin-bottom: 20px;
+}
+#login-email{
+    margin-bottom: 15px;
+}
+#login-pass{
+    margin-bottom:7px;
+}
+#dontSeeEmail{
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 300;
+}
+.full-section{
+    width: 100%;
+    margin: 0 auto;
+}
+.details-text{
+    font-weight: 300;
+    font-size: 23px;
+}
+#register-email{
+    font-weight: 500;
+}
+.nextPrev{
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight:300;
+    margin-bottom: 35px;
+    float: left;
+    width: 100%;
+}
+.nextPrev div{
+    display: inline-block;
+}
+.tos{
+    color: black;
+    text-shadow:none;
+}
+.next,.prev{
+    float: right;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(167,167,167);
+    text-shadow: 1px 1px 1px #fff;
+}
+.prev{
+    float: left !important;
+}
+#register3section{
+    padding-bottom: 43px;
+}
+#loginsection{
+    padding-bottom: 15px;
+}
+.arrow-left {
+    width: 25px;
+    height: 25px;
+    background:url('../img/next_prev.png');
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+    -webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+.arrow-right {
+    width: 25px;
+    height: 25px;
+    background:url('../img/next_prev.png');
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+}
+.close{
+    width:43px;
+    height: 37px;
+    background-image: url('../img/close_reg.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+.close:hover{
+    background-position: -46px;
+}
+.close:active{
+    background-position: -92px;
+}
+#signin-text{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 100px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 20px;
+    line-height: 30px;
+}
+.login-register-title{
+    padding-bottom: 25px;
+}
+.left-section{
+    width: 50%;
+    float: left;
+}
+.right-section{
+    width: 405px;
+    float: right;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+.full-width{
+    width:395px;
+}
+.flname{
+    width: 190px;
+}
+#resendButt{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#fname{
+    margin-right: 12px;
+}
+
+#registerSocialIcons div{
+    height: 73px;
+    background-image: url('../img/social_reg.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: -8px;
+    margin-top: 16px;
+    cursor: pointer;
+
+}
+#registerFacebook{
+    width:72px;
+}
+#registerFacebook:hover{
+    background-position: 0 -70px;
+}
+#registerFacebook:active{
+    background-position: 0 -142px;
+}
+
+#registerLinkedin{
+    width: 72px;
+    background-position: -72px 0;
+}
+#registerLinkedin:hover{
+    background-position: -72px -70px;
+}
+#registerLinkedin:active{
+    background-position: -72px -70px;
+}
+
+#registerTwitter{
+    width:72px;
+    background-position: -144px -0;
+}
+#registerTwitter:hover{
+    background-position: -144px -70px;
+}
+#registerTwitter:active{
+    background-position: -144px -70px;
+}
+
+#registerGoogle{
+    width:72px;
+    background-position: -215px -0;
+}
+#registerGoogle:hover{
+    background-position: -215px -70px;
+}
+#registerGoogle:active{
+    background-position: -215px -70px;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    text-align: center;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: none;
+}
+
+
+
+
+
+.styled-select{
+    background:url('../img/select_arrow.png') rgb(88,88,91) no-repeat;
+    background-position: 99% 50%;
+    border:none;
+    color:#fff;
+    font-size: 0.9375em;
+    height: 37px;
+    margin: 0.625em 0;
+    outline:none;
+    padding:0.625em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 395px;
+    margin-bottom: 15px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 0px;
+}
+#whats-this{
+    font-size: 15px;
+    float: right;
+    font-weight: 300;
+    margin-right: 52px;
+}
+#grad-month{
+    width: 238px;
+}
+#grad-year{
+    width: 130px;
+    margin-left: 23px;
+}

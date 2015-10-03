@@ -1,0 +1,74 @@
+<div class='reveal-modal medium' id='profile-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Add new challenge</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='validation-messages large-12 columns'></div>
+    </div>
+    <form class='custom'>
+
+        <div class='large-12 columns'>
+            <div class='panel'>
+                <div class='row'>
+                    <div class='large-6 columns'>
+                        <input id='challenge-title' placeholder='Challenge Title' type='text' />
+                    </div>
+
+                    <div class='large-6 columns'>
+                        <input id='location' placeholder='Location' type='text' />
+                    </div>
+
+                    <div class='large-6 columns'>
+                        <input id='contact-name' placeholder='Contact Name' type='text' />
+                    </div>
+                    <div class='large-6 columns'>
+                        <select id='department' class="styled-select-time tk-museo-sans wrg-select"  placeholder='Department'>
+                            <option value="Department">Department</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Information Technology (IT)">Information Technology (IT)</option>
+                            <option value="Finance/Accounting">Finance/Accounting</option>
+                            <option value="Production">Production</option>
+                            <option value="Customer Service">Customer Service</option>
+                            <option value="Human Resources">Human Resources</option>
+                            <option value="Research & Design">Research & Design</option>
+                            <option value="Operations">Operations</option>
+                            <option value="Legal">Legal</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class='large-12 columns'>
+                        <input id='apply-link' placeholder='Application link' type='text' />
+                    </div>
+
+                    <div class='large-12 columns'>
+                        <p  style='display: inline'> Please enter Challenge Description: </p>
+                        <textarea rows="5" id='challenge-description' placeholder='Challenge Description' type='text' />
+                    </div>
+                    <div class='large-12 columns'>
+                        <p  style='display: inline'> Please enter Challenge Deliverable: </p>
+                        <textarea rows="5" id='expected-deliverable' placeholder='Expected Challenge Deliverable(s)' type='text' />
+                    </div>
+                    <div class='large-12 columns'>
+                        <input rows="5" id='keywords' placeholder='Please enter skill keywords, comma separated, without blank spaces' type='text' />
+                    </div>
+                    <div class='large-12 columns'>
+                        <p  style='display: inline'> Suggested Difficulty Level: </p>
+                        <input type="radio" name="difficulty-level" value="college"  style='display: inline; margin-left: 10%'> College
+                        <input type="radio" name="difficulty-level" value="high-school"  style='display: inline; margin-left: 10%'> High School
+                    </div>
+
+                    <div class='row'>
+                        <div class='large-12 columns form-actions' style="margin-top: 2%">
+                            <input id="saveChallenge" class='button save-button' value='Save and Post'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

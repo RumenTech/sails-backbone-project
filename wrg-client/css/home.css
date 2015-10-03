@@ -1,0 +1,40 @@
+/*Home CSS*/
+
+#features{
+	background: rgb(239, 236,234);
+	padding-bottom: 32px;
+}
+#feature1{
+	margin-left: 36px;
+	margin-right: 69px;
+}
+#feature2{
+	margin-right: 69px;
+}
+.feature{
+	width: 250px;
+	display: inline-table;
+	text-align: center;
+	margin-top: 36px;
+}
+.feature-text{
+	font-weight: 300;
+	text-align: left;
+	margin-top: 25px;
+	font-size: 22px;
+}
+.wrg-blue{
+	background: #00b3f0;
+}
+.standard-padding{
+	padding: 10px;
+}
+.beta-disclaimer{
+	color: white;
+	font-size: 13px;
+}
+
+.fundraising a:visited, a:link {
+    color: #33ff2e
+}
+

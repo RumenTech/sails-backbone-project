@@ -1,0 +1,89 @@
+<article>
+    <div class="original">
+        <div class='large-12 columns module'>
+            <header class='module-header'>
+                <h4>
+                    <span>Ideal Candidates</span>
+                    <div class='module-corner-actions'>
+                        <a>
+                            <i class='icon-plus tip-top' title='Add' style='cursor: pointer'></i>
+                        </a>
+                    </div>
+                </h4>
+            </header>
+            <div class="row">
+                <div class='large-4 columns' style="margin-top: 0;">
+                    <ul style="width: 230px; height: 200px; overflow-x: hidden">
+                        <li class="expanded" id="salesli" ><a class="on">Sales</a>
+                            <ul class='company-list candidate-list' id="sales" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="marketingli" ><a class="on">Marketing</a>
+                            <ul class='company-list candidate-list' id="marketing" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="informationtechli" ><a class="on">Information Technology (IT)</a>
+                            <ul class='company-list candidate-list' id="informationtech" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="financeli" ><a class="on">Finance/Accounting</a>
+                            <ul class='company-list candidate-list' id="finance" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="productionli" ><a class="on">Production</a>
+                            <ul class='company-list candidate-list' id="production" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="customerserviceli" ><a class="on">Customer Service</a>
+                            <ul class='company-list candidate-list' id="customerservice" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="humanresourcesli" ><a class="on">Human Resources</a>
+                            <ul class='company-list candidate-list' id="humanresources" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="researchli" ><a class="on">Research & Design</a>
+                            <ul class='company-list candidate-list' id="research" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="operationsli" ><a class="on">Operations</a>
+                            <ul class='company-list candidate-list' id="operations" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="legalli" ><a class="on">Legal</a>
+                            <ul class='company-list candidate-list' id="legal" style="list-style:none;"></ul>
+                        </li>
+                        <li class="expanded" id="otherli" ><a class="on">Other</a>
+                            <ul class='company-list candidate-list' id="other" style="list-style:none;"></ul>
+                        </li>
+                        <!-- Dirtiest fix - Last department wouldn't be updated -->
+                        <li class="expanded" style='display:none' ><a class="on">aaa</a>
+                            <ul class='company-list candidate-list' id="aaa" style="list-style:none;"></ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class='large-8 columns' id="descriptionDiv">
+                    <h6>{{tagline}}</h6>
+                    <p>{{description}}</p>
+                    <p>{{preffereddescription}}</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $('ul li.expanded > a')
+                        .attr('data-active','0')
+                        .click(function(event){
+                            $('.company-list').hide();
+                            if($(this).attr('data-active')==0){
+                                $(this).parent().find('ul').slideToggle('slow');
+                                $(this).attr('data-active','1');
+                            }
+                            else{
+                                $(this).attr('data-active','0');
+                                $(this).parent().find('ul').show();
+                            }
+                        });
+                $('a.on').click(function(){
+                    $('a.on').removeClass("active");
+
+                    $(this).addClass("active");
+                });
+            });
+        </script>
+
+    </div>
+
+</article>

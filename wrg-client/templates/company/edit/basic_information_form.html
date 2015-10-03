@@ -1,0 +1,134 @@
+<div class='reveal-modal medium' id='profile-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Company Profile Information</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='validation-messages large-12 columns'></div>
+    </div>
+    <form class='custom'>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <input id='company-size' placeholder='Company size' type='hidden' />
+                        </div>
+                    </div>
+                    <div class='row'>
+
+                        <div class='large-6 columns'>
+                            <input id='state' placeholder='state' type='text' />
+                        </div>
+                        <div class='large-6 columns'>
+                            <input id='city' placeholder='City' type='text' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <input class="url validator" id='company-website' placeholder='Company Website URL' type='text' />
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                      <span class='prefix radius'>
+                                        <i class='icon-facebook'></i>
+                                      </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='input-post validator url' id='facebook-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                  <span class='prefix radius'>
+                                    <i class='icon-linkedin'></i>
+                                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='input-post validator url' id='linkedin-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                  <span class='prefix radius'>
+                                    <i class='icon-google-plus'></i>
+                                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='input-post validator url' id='google-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                  <span class='prefix radius'>
+                                    <i class='icon-twitter'></i>
+                                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='input-post validator url' id='twitter-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <input maxlength='50' id='tagline' placeholder='Write a tagline about your company!' type='text' />
+                        </div>
+                    </div>
+                    <div class='row bottom-collapse'>
+                        <div class='large-12 columns form-notice'>
+                            <p>50 character limit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <textarea rows="5" maxlength="5000" id='description' placeholder='Tell us more about your company' />
+                        </div>
+                    </div>
+                    <div class='row bottom-collapse'>
+                        <div class='large-12 columns form-notice'>
+                            <p>5000 character limit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns form-actions'>
+                <input id="saveInformation" class='button save-button' type="button" value='Save' />
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

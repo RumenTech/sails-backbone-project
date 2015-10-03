@@ -1,0 +1,72 @@
+<article>
+    <div class="original">
+        <div class='row'>
+            <div class="large-12 columns" id='{{id}}' style="border: 10px solid #f4f1f0;  ">
+                <div class="large-12 columns">
+                    <div class="row">
+                        <div class="large-3 columns">
+                            <h5>{{firstName}} {{lastName}}</h5>
+                        </div>
+                        <div class="module-corner-actions">
+                            {{#if_eq role "owner"}}
+                            <a>
+                                <i class='icon-edit tip-top' title='Edit'></i>
+                            </a>
+                            <a>
+                                <i class='icon-delete tip-top' title='Delete'></i>
+                            </a>
+                            {{/if_eq}}
+                            {{#if_eq role "admin"}}
+                            <a>
+                                <i class='icon-delete tip-top' title='Delete'></i>
+                            </a>
+                            {{/if_eq}}
+                            {{#if_eq role "moderator"}}
+                            <a>
+                                <i class='icon-delete tip-top' title='Delete'></i>
+                            </a>
+                            {{/if_eq}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='large-2 columns'>
+                            {{#if profileImage}}
+                            <img src='{{profileImage}}' class='groupUserPostImage'>
+                            {{else}}
+                            <img src='//placehold.it/80x80'>
+                            {{/if}}
+                        </div>
+                        <div id="postCont" class='large-10 columns'>
+                        <textarea class="inputPostOnLoad" style="background-color: #ffffff; overflow: hidden; resize: none" id="postContentHolder-{{id}}" type="text"
+                                  readonly>{{content}}</textarea>
+                            <a>
+                                <div id="saveEditPost-{{id}}"
+                                     class="saveEditCommentButtonDefaultState postEditSaver style='padding-left:70px'">Save
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='row' style="font-size: 12px">
+                        <div class='large-6 columns'>
+                            <!--<a id="like-{{id}}" class="revealComments ">Like | </a>-->
+                            <a id="comments-{{id}}" class="revealComments ">Comment</a>
+                        </div>
+                        <div class='large-6 columns'>
+                            Posted on: {{postedOn}}
+                        </div>
+                    </div>
+
+                    <a id='more-post-{{id}}' class="moreComments" style="display:none">Show more comments</a>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #F4F1F0;" class='row'>
+            <div class="large-12 columns">
+                <div id="commentContainer-{{id}}"> </div>
+                <input id='post-{{id}}' class="addNewComment" style='display: none; width: 555px; margin: auto' placeholder='Post a comment...' type='text'/>
+            </div>
+        </div>
+
+    </div>
+</article>
+

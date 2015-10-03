@@ -1,0 +1,363 @@
+<article>
+<style>
+    .sidebar-left {
+        width: 250px;
+    }
+</style>
+    <div class="container">
+        <div class="row buffer-bottom">
+            <div class="col-lg-3">
+                <h1>My Profile</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3"> <!-- left column start -->
+                <div class="sidebar-left">
+                    <section id="profile-photo" class="row  buffer-bottom">
+                        <div class="col-lg-12">
+                            <img src="img/add-photo.png" alt="Add a photo"/>
+                        </div>
+                    </section>
+                    <section id="profile-tools" class="row">
+                        <div class="col-lg-12">
+                            <button type="button" id="btn-create-resume" class="btn btn-secondary btn-block">Create My Resume</button>
+                            <button type="button" id="btn-import-information" class="btn btn-primary btn-block">Import Information</button>
+                        </div>
+                    </section>
+                    <section id="profile-readiness" class="row">
+                        <div class="col-lg-12">
+                            <h4>Profile Readiness</h4>
+                            <p>Suggestions to raise this number:</p>
+                            <ul>
+                                <li>Add more experiences</li>
+                                <li>Add more skills</li>
+                            </ul>
+                            <button type="button" id="btn-show-recommendations" class="btn btn-primary btn-block">Show Recommendations</button>
+                        </div>
+                    </section>
+                </div>
+            </div> <!-- left column end -->
+            <section id="basic-information" class="col-lg-9 form-group-sm">
+                <form novalidate>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>The Basics</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label>First Name</label>
+                            <input id="first-name" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Last Name</label>
+                            <input id="last-name" type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label>Email Address</label>
+                            <input id="email-address" type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label for="current-school">School</label>
+                            <input id="current-school" type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label class="inline" for="current-major">What are you majoring in?</label>&nbsp;<a href="#" class="inline small">(I need help deciding)</a>
+                            <ul class="list-unstyled">
+                                <li class="form-inline"><input id="current-major" type="text" class="form-control" size="50" /><a href="#" class="inline">+ Add Another</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label class="inline" for="profession-interest">What profession interests you?</label>
+                            <ul class="list-unstyled">
+                                <li class="form-inline"><input id="profession-interest" type="text" class="form-control" size="50" /><a href="#" class="inline">+ Add Another</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label for="estimated-graduation-date">When are you aiming to graduate?</label>
+                            <input id="estimated-graduation-date" type="text" class="form-control width-auto" size="10" />
+                            <small>mm/yyyy</small>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label for="current-gpa">Current GPA</label>
+                            <div class="form-inline">
+                                <input id="current-gpa" type="text" class="form-control" size="10"/>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 btn-toolbar">
+                            <button type="submit" class="btn btn-primary btn-width-lg">Update</button>
+                            <button type="button" class="btn btn-primary btn-width-lg">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+                <hr />
+            </section>
+
+            <section id="skills-information" class="col-lg-9 col-lg-offset-3 form-group-sm">
+            <form novalidate>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label class="h4">Skills</label>&nbsp;
+                        <a class="small" data-toggle="popover"
+                           data-content="Experiences earn you Readiness points on your profile that Employers can see when you start looking for potential jobs and internships. The experiences themselves build your resume along the way and also help the recommendation system in giving you more relevant suggestions for future experiences.">
+                            (Why should I fill this out?)</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <label>Skills you have</label>&nbsp;<span class="small">(separate with commas)</span>
+                        <textarea id="skill-list-current" type="text" class="form-control" maxlength="500"/>
+                        <small>Examples
+                            <abbr title="Hypertext Markup Language">HTML</abbr>,
+                            <abbr title="Cascading Style Sheets">CSS</abbr>,
+                            Javascript, Python, Node js
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <label>Skills you are interested in</label>&nbsp;<span class="small">(separate with commas)</span>
+                        <textarea id="skill-list-desired" type="text" class="form-control" maxlength="500"/>
+                        <small>Examples C#,
+                            <abbr title="A Plus Plus Certificatoin">A++</abbr>,
+                            <abbr title="Structured Query Language">SQL</abbr>
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <button type="submit" class="btn btn-primary btn-width-md">Add</button>
+                    </div>
+                </div>
+            </form>
+
+            <hr />
+        </section>
+            <!-- This section is alumni role -->
+
+            <section id="alumni-information" class="col-lg-9 col-lg-offset-3 form-group-sm">
+                <form novalidate>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label class="h4">My Story</label>&nbsp;
+                            <a class="small" data-toggle="popover"
+                               data-content="Experiences earn you Readiness points on your profile that Employers can see when you start looking for potential jobs and internships. The experiences themselves build your resume along the way and also help the recommendation system in giving you more relevant suggestions for future experiences.">
+                                (Why should I fill this out?)</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a class="pull-right " role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <span class="glyphicon pull-right" aria-hidden="true"></span>
+                                            </a>
+                                            What is an average day like for you in your profession?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="form-group col-lg-12">
+                                                    <textarea id="story-average-day" type="text" class="form-control" maxlength="2000"/>
+                                                    <small>2000 character limit
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 btn-toolbar">
+                                                    <button type="submit" class="btn btn-primary btn-width-lg">Save</button>
+                                                    <button type="button" class="btn btn-primary btn-width-lg">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="pull-right" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                <span class="glyphicon pull-right" aria-hidden="true"></span>
+                                            </a>
+                                            What process did you go through to get in your position and what made you stand out?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="form-group col-lg-12">
+                                                    <textarea id="story-process" type="text" class="form-control" maxlength="2000"/>
+                                                    <small>2000 character limit</small>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 btn-toolbar">
+                                                    <button type="submit" class="btn btn-primary btn-width-lg">Save</button>
+                                                    <button type="button" class="btn btn-primary btn-width-lg">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="pull-right glyphicon" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                <span class="pull-right" aria-hidden="true"></span>
+                                            </a>
+                                            What do you wish you knew as a student?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="form-group col-lg-12">
+                                                    <textarea id="story-wish-knew" type="text" class="form-control" maxlength="2000"/>
+                                                    <small>2000 character limit</small>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 btn-toolbar">
+                                                    <button type="submit" class="btn btn-primary btn-width-lg">Save</button>
+                                                    <button type="button" class="btn btn-primary btn-width-lg">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <hr />
+            </section>
+
+
+
+
+            <!--This section is student role -->
+            <section id="experience-information" class="col-lg-9 col-lg-offset-3 form-group-sm">
+                <form novalidate>
+                    <div class="row">
+                        <div class="col-lg-12 inline">
+                            <label class="h4">Experience</label>&nbsp;<a href="#" class="small">(Why should I fill this out?)</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-4">
+                            <label>Title</label>
+                            <input id="job-title" type="text" class="form-control" />
+                            <small>Example: Research Assistant at Georgia Tech</small>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label>Duration</label>
+                            <div class="form-inline">
+                                <span>
+                                    <input id="job-duration-from" type="text" class="form-control" size="6"/>
+                                    <small>dd/yyyy</small>
+                                </span>
+                                &nbsp;-&nbsp;
+                                <span>
+                                    <input id="job-duration-to" type="text" class="form-control" size="6" />
+                                    <small>dd/yyyy or present</small>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label>Category</label>
+                            <select id="job-category" type="text" class="form-control">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <button type="submit" class="btn btn-primary btn-width-md">Add</button>
+                        </div>
+                    </div>
+                </form>
+
+                <hr />
+            </section>
+
+            <section id="awards-information" class="col-lg-9 col-lg-offset-3 form-group-sm">
+                <form novalidate>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label class="h4">Awards</label>&nbsp;<a href="#" class="small">(Why should I fill this out?)</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label>Award Title</label>
+                            <input id="award-title" type="text" class="form-control" />
+                            <small>Examples: Dean's List</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label>Short description of award</label>
+                            <textarea id="award-description" type="text" class="form-control" maxlength="250"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <button type="submit" class="btn btn-primary btn-width-md">Add</button>
+                        </div>
+                    </div>
+                </form>
+
+                <hr />
+            </section>
+
+            <section id="personal-video" class="col-lg-9 col-lg-offset-3 form-group-sm">
+                <form novalidate>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label class="h4">Personal Video Statement</label>&nbsp;<a href="#" class="small">(Why should I fill this out?)</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label>Video Link</label>
+                            <input id="video-link" type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <button type="submit" class="btn btn-primary btn-width-md">Add</button>
+                        </div>
+                    </div>
+                </form>
+
+                <hr />
+            </section>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+</article>

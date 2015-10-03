@@ -1,0 +1,27 @@
+<script id="preventrender757" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <a id="checkGroup">
+
+                <ul class='vcard group-card'>
+                    <li class='user-photo'>
+
+                        <div class='groupIndexImage'>
+                            {{#if groupImage}}
+                            <img class='groupIndexImage' src='{{groupImage}}'>
+                            {{else}}
+                            <img src='//placehold.it/150x150'>
+                            {{/if}}
+                        </div>
+                    </li>
+                    <li>
+                        <h4>{{name}} </h4>
+                        <h6><strong>Started by:</strong></h6>
+                        <h6>{{startedBy}}</h6>
+                    </li>
+                </ul>
+            </a>
+        </div>
+
+    </article>
+</script>

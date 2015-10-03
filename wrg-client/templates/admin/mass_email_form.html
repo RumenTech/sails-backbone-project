@@ -1,0 +1,38 @@
+<div class='reveal-modal medium' id='award-modal'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <form class='custom'>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='row'>
+                    <div class='validation-messages large-12 columns'></div>
+                </div>
+                <div class='message-container'>
+                    <div class="row">
+                        <div class='large-6 columns'>
+                            <select id='type' class="styled-select-time tk-museo-sans wrg-select">
+                                <option value="">Receivers: </option>
+                                <option value="all">All Users</option>
+                                <option value="student">Students</option>
+                                <option value="alumni">Alumni</option>
+                                <option value="company">Companies</option>
+                                <option value="college">Colleges</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='large-12 columns'>
+                            <textarea rows="5" id='content' placeholder='Message content' type='text'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns form-actions'>
+                <input class='button save-button' value='Send'/>
+                <input class='button cancel-button' value='Cancel'/>
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

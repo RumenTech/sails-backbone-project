@@ -1,0 +1,65 @@
+<article>
+    <div class="original">
+        <div class="module portfolio-intro">
+            <div class='large-9 small-8 columns'>
+                <header>
+                    <h2 class='thinheader'>{{first_name}} {{last_name}}</h2>
+
+                    {{#if major}} {{#if school}}
+                    <h6 class='thinheader'>{{major}} at {{school}} </h6>
+                    {{/if}}{{/if}}
+                    {{#if graduation_year}}
+                    Graduating in {{month}} {{graduation_year}}
+                    {{/if}}
+                </header>
+                <div class='module-corner-actions'>
+                    <a>
+                        <i class='icon-edit tip-top' title='Edit'></i>
+                    </a>
+                </div>
+                <div class='portfolio-extra'>
+                    <h5 class='thinheader'>{{tagline}}</h5>
+                    <a class='special' href='{{personal_website}}' target="_blank">{{personal_website}}</a>
+                    <ul class='inline-list portfolio-social'>
+
+                        {{#if twitter_url}}
+                        <li>
+                            <a href='{{twitter_url}}' target="_blank" >
+                                <i class='icon-twitter'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if facebook_url}}
+                        <li>
+                            <a href='{{facebook_url}}' target="_blank">
+                                <i class='icon-facebook'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if linkedin_url}}
+                        <li>
+                            <a href='{{linkedin_url}}' target="_blank">
+                                <i class='icon-linkedin'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if google_url}}
+                        <li>
+                            <a href='{{google_url}}' target="_blank">
+                                <i class='icon-google-plus'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if gpa}}
+                        <li>{{gpa}} GPA</li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+
+            <div id="sharePost"></div>
+        </div>
+
+    </div>
+
+</article>

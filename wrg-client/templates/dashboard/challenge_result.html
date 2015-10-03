@@ -1,0 +1,34 @@
+<article>
+    <div class="original">
+        <a id="challengeLink">
+            {{#if_eq is_seen true}}
+            <div class='connection' style='background-color: #EFEFEF'>
+                <div class='connection-photo' style='cursor: pointer'>
+                    {{#if profile_image}}
+                    <img class='small-companies' src='{{profile_image}}'/>
+                    {{else}}
+                    <img src='//placehold.it/200x200'/>
+                    {{/if}}
+                </div>
+                <div class='connection-info' style='cursor: pointer'>
+                    <h4 class='thinheader'>{{challenge_title}}</h4>
+                </div>
+            </div>
+            {{else}}
+            <div class='connection' style='background-color: #d3d3d3; border: 1px solid'>
+                <div class='connection-photo' style='cursor: pointer'>
+                    {{#if profile_image}}
+                    <img class='small-companies' src='{{profile_image}}'/>
+                    {{else}}
+                    <img src='//placehold.it/200x200'/>
+                    {{/if}}
+                </div>
+                <div class='connection-info' style='cursor: pointer'>
+                    <h4 class='thinheader'>{{challenge_title}}</h4>
+                </div>
+            </div>
+            {{/if_eq}}
+        </a>
+    </div>
+
+</article>

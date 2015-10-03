@@ -1,0 +1,46 @@
+<script src="/js/jquery.js"></script>
+<script src="/js/login.js"></script>
+
+<h2>Unit Testing</h2>
+<input type="button" value="Start Unit Test" id="start">
+
+<section id="Login Must Fail">
+
+<h4>User controller must be forbidden</h4>
+<div id="before_login_fail"></div>
+
+<h4>Login must fail</h4>
+<div id="login_answer_1"></div>
+
+<h4>Still user controller must be forbidden</h4>
+<div id="after_login_fail"></div>
+
+<h4>Login must be successful</h4>
+<div id="login_answer_2"></div>
+
+<h4>User controller must be enabled</h4>
+<div id="after_login_success"></div>
+
+<h4>Logout Session</h4>
+<div id="logout_answer"></div>
+
+<h4>User controller must be forbidden again</h4>
+<div id="after_logout"></div>
+
+</section>
+
+
+<script>
+
+$(function() {
+  // Handler for .ready() called.
+
+    $('#start').click(function(){
+        login_fail();
+        login_success();
+        logout()
+    })
+
+});
+
+</script>

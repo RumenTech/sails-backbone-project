@@ -1,0 +1,16 @@
+<article>
+    <div class="original">
+        {{#if_eq status "pending" }}
+
+        <div id="{{user_id}}-" style="cursor:pointer" title="{{firstName}} {{lastName}}" class="userPending userPendingHover">
+            {{#if profileImage}}
+            <img class='groupUserImage' src="{{profileImage}}"/>
+            {{else}}
+            <img class='groupUserImage' src='//placehold.it/80x80'/>
+            {{/if}}
+        </div>
+
+        {{/if_eq}}
+
+    </div>
+</article>

@@ -1,0 +1,81 @@
+<article>
+    <div class="original">
+        <div class="module portfolio-intro">
+            <div class='large-9 small-8 columns'>
+                <header>
+                    <header>
+                        <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                        <h6 class='thinheader'>Studied {{major}} at {{alma_mater}}</h6>
+                    </header>
+                    <div class='portfolio-extra'>
+                        <h5 class='thinheader'>{{job_title}}, {{company}}</h5>
+
+                    </div>
+                </header>
+
+
+
+                <div class='module-corner-actions'>
+                    <a>
+                        <i class='icon-edit tip-top' title='Edit'></i>
+                    </a>
+                </div>
+                <div class='portfolio-extra'>
+                    <h5 class='thinheader'>{{tagline}}</h5>
+                    <a class='special' href='{{personal_url}}' target="_blank">{{personal_url}}</a>
+                    <ul class='inline-list portfolio-social'>
+
+                        {{#if twitter_url}}
+                        <li>
+                            <a href='{{twitter_url}}' target="_blank" >
+                                <i class='icon-twitter'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if facebook_url}}
+                        <li>
+                            <a href='{{facebook_url}}' target="_blank">
+                                <i class='icon-facebook'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if linkedin_url}}
+                        <li>
+                            <a href='{{linkedin_url}}' target="_blank">
+                                <i class='icon-linkedin'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if google_url}}
+                        <li>
+                            <a href='{{google_url}}' target="_blank">
+                                <i class='icon-google-plus'></i>
+                            </a>
+                        </li>
+                        {{/if}}
+                        {{#if gpa}}
+                        <li>{{gpa}} GPA</li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+            <div class='row alumni-story'>
+                <div class='large-12 columns' style="margin-top: 10px;margin-left:15px;">
+                    <h6 class='specialheader'">What are your typical day-to-day-activities in your career?</h6>
+
+                    <p>{{activities}}</p>
+                    <h6 class='specialheader'">What process did you go through to enter your position and what
+                    experiences or skills made you stand out versus other applicants?</h6>
+
+                    <p>{{advice}}</p>
+                    <h6 class='specialheader'">When I was a student, I wish I had known ...</h6>
+
+                    <p>{{hindsight}}</p>
+                </div>
+            </div>
+
+            <div id="sharePost"></div>
+        </div>
+    </div>
+
+</article>

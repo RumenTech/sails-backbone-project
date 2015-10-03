@@ -1,0 +1,40 @@
+<article>
+    <div class="original">
+        <div class="large-12 columns">
+            <div class="row">
+                {{#if first}}
+                <div id="div{{id}}" class="large-10 columns field" style="cursor: pointer;background-color: #00b3f0;">
+                    {{else}}
+                    <div id="div{{id}}" class="large-10 columns field" style="cursor: pointer;">
+                        {{/if}}
+                        <h6>{{name}}</h6>
+                    </div>
+                    <div class="large-1 columns">
+                        {{#if first}}
+                        <i id="editEventdiv{{id}}" style="display: block;"  class='icon-edit tip-top' title='Edit'></i>
+                        {{else}}
+                        <i id="editEventdiv{{id}}" style="display: block;" class='icon-edit tip-top' title='Edit'></i>
+                        {{/if}}
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="large-10 columns field">
+                    <span>{{date}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-10 columns field">
+                    <span>{{start}} - {{end}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-10 columns field" style="border-bottom: 1px solid #c1bcba;">
+                    <span>{{location}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

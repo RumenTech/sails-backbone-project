@@ -1,0 +1,38 @@
+<li>
+    <i style="margin-right: 5px" class="icon-delete tip-top right" title="Delete"></i>
+    {{#if isVideo}}
+    <div class="row">
+        <div class='large-12 columns center'>
+            {{#if id}}
+            <img src="//img.youtube.com/vi/{{id_video}}/1.jpg" class="media-image" height="100px"/>
+            {{/if}}
+        </div>
+    </div>
+    {{else}}
+    <div class="row">
+        <div class='large-12 columns center'>
+            <img id="media-image-blob-{{index}}" src="{{data}}" class="media-image"/>
+        </div>
+    </div>
+    {{/if}}
+    {{#if id}}
+    <div class="row">
+        <div class='large-12 columns center'>
+            <input id='media-name-{{index}}' value='{{name}}' placeholder='Title' type='text'/>
+        </div>
+    </div>
+    {{else}}
+    <div class="row">
+        <div class='large-12 columns center'>
+            {{#if isVideo}}
+            <img src="{{youTubeThumb}}" class="media-image"/>
+            <input id='media-name-{{index}}' value='{{name}}' placeholder='Title' type='text'/>
+            <input style="display: none" type='text' id='media-video-url-{{index}}' value='{{youTubeUrl}}' placeholder='Video URL'
+                   class="media-image-select"/>
+            {{else}}
+            <input id='media-name-{{index}}' value='{{name}}' placeholder='Title' type='text'/>
+            {{/if}}
+        </div>
+    </div>
+    {{/if}}
+</li>

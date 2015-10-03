@@ -1,0 +1,28 @@
+<article>
+    <div class="original">
+        {{#if employed}}
+        {{else}}
+        <div id="reportingLink">
+            <ul class='vcard user-card reporting'>
+                <li class='user-photo'>
+                    <a class='show-story'>
+                        {{#if profile_image}}
+                        <img src='{{profile_image}}' width="180px">
+                        {{else}}
+                        <img src='//placehold.it/180x180'>
+                        {{/if}}
+                        <span class='user-card-actions linked'>View Story</span>
+                    </a>
+                </li>
+                <li>
+                    <h5 class='thinheader'>{{first_name}} {{last_name}}</h5>
+                    {{#if job_title}} {{#if company}}
+                    <h6 class='thinheader'><strong>{{job_title}}</strong>, {{company}}</h6>
+                    {{/if}} {{/if}}
+                </li>
+            </ul>
+        </div>
+        {{/if}}
+    </div>
+
+</article>

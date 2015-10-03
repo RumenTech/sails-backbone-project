@@ -1,0 +1,92 @@
+<article>
+    <div class="original">
+        <div class='l-main'>
+            <div class="row">
+                <section class='large-9 columns'>
+                    <header>
+                        <h3 class="header">
+                            <span>Settings</span>
+                        </h3>
+                    </header>
+                    <div class='module'>
+                        <div class="large-12 columns">
+                            <header>
+                                <h4 class='module-header'>
+                                    <span>Company</span>
+                                </h4>
+                            </header>
+                        </div>
+                        <div class="large-10 columns">
+                        <span class="large-4 columns">
+                        <h5 class="thinheader">
+                            Company Name
+                        </h5>
+                         </span>
+                        <span class="large-8 columns">
+                            <span id="spancompany-name"><strong>{{name}}</strong></span>
+                            <input type="text" id="inputcompany-name" value="{{name}}" style="display: none" class="large-9">
+                         </span>
+                        </div>
+                        <div class="large-2 columns">
+                            <a>
+                                <i class="icon-edit" id="editcompany-name" title="Edit"></i>
+                            </a>
+                            <input class='button save-button large-12' id="savecompany-name" value='Done' style="display: none"/>
+                        </div>
+                        <span class="large-12 columns"><span class="large-12 columns settings-list"></span></span>
+
+                        <div class="large-10 columns">
+                        <span class="settings-list">
+                            <span class="large-4 columns">
+                                <h5 class="thinheader">Company Size</h5>
+                            </span>
+                            <span class="large-8 columns">
+                            <span id="spancompany-size">
+                            <strong>{{company_size}}</strong>
+                            </span>
+                                <select style="display: none" id='inputcompany-size' >
+                                    <option value="{{company_size}}">Company size</option>
+                                    <option value='Small is 0-200'>Small is 0-200</option>
+                                    <option value='Medium is 200-500'>Medium is 200-500</option>
+                                    <option value='Large is 500+'>Large is 500+</option>
+                                </select>
+                                <!--<input type="text" id="inputcompany-size" value="{{company_size}}" style="display: none" class="large-9">-->
+                            </span>
+                        </span>
+                        </div>
+                        <div class="large-2 columns">
+                            <a>
+                                <i class="icon-edit" title="Edit" id="editcompany-size"></i>
+                            </a>
+                            <input class='button save-button large-12' id="savecompany-size" value='Done' style="display: none"/>
+                        </div>
+                        <span class="large-12 columns"><span class="large-12 columns settings-list"></span></span>
+
+                        <div class="large-10 columns">
+                        <span class="large-4 columns">
+                        <h5 class="thinheader">Account Type </h5>
+                        </span>
+                        <span class="large-8 columns">
+                            <span id="spancompany-accounttype">
+                        <strong>{{account_type}}</strong>
+                                </span>
+                                <input type="text" id="inputcompany-accounttype" value="{{account_type}}" style="display: none" class="large-9">
+                         </span>
+                        </div>
+                        <div class="large-2 columns">
+                            <a>
+                                <i class="icon-edit" title="Edit" id="editcompany-accounttype"></i>
+                            </a>
+                            <input class='button save-button large-12' id="savecompany-accounttype" value='Done' style="display: none"/>
+                        </div>
+                    </div>
+                    <div id="user-section">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id='footer-section'></div>
+    </div>
+
+</article>

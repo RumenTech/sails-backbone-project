@@ -1,0 +1,63 @@
+<div class='reveal-modal large-12 columns' id='future-self-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Goal</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='validation-messages large-12 columns'></div>
+    </div>
+    <form enctype="multipart/form-data" method="post" name="fileinfo" class='custom'>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <select id='category' class="oa-select">
+                                <option value='0'>Choose Category</option>
+                                <option value='1'>Internship/Co-op</option>
+                                <option value='2'>Community Service</option>
+                                <option value='3'>Public Speaking</option>
+                                <option value='4'>Research</option>
+                                <option value='5'>Leadership</option>
+                                <option value='6'>Innovation</option>
+                                <option value='7'>Industry Outreach</option>
+                                <option value='8'>Grit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-9 columns'>
+                            <input id='goal-title' placeholder='Goal Title' type='text' />
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <div class='ui-widget'>
+                                <input id='goal-end' placeholder='Goal End Date' type='text' />
+                            </div>
+                        </div>
+                        <div class='large-6 columns' id='chk-goal-met'>
+                            <label for='finished'>
+                                <span class='custom checkbox'>
+                                    <input id='finished'  name='finished' type='checkbox' class="checkbox" />
+                                </span>
+                                 Goal Met!
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns form-actions'>
+                <input class='button save-button' type='button' value='Save' id="saveExperience" />
+                <input class='button cancel-edit' type='button' value='Cancel' id="cancel" />
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <a class='close-reveal-modal'>×</a>
+    </div>
+</div>

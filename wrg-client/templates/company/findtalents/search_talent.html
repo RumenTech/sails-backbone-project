@@ -1,0 +1,346 @@
+<script id="preventrender74657" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <div class='l-main'>
+                <div class='row'>
+                    <div class='large-9 columns module'>
+                        <div class='row student-data'>
+                            <div class='large-3 columns'>
+                                {{#if profile_image}}
+                                <img src='{{profile_image}}' width="180px">
+                                {{else}}
+                                <img src='//placehold.it/180x180'>
+                                {{/if}}
+                            </div>
+                            <div class='large-9 columns'>
+                                <header>
+                                    <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                                    {{#if alma_mater}}
+                                    <h6 class='thinheader'>Studied {{major}} at {{alma_mater}}</h6>
+                                    {{/if}}
+                                </header>
+                                {{#if graduation_year}}
+                                <div class='portfolio-extra'>
+                                    <h5 class='thinheader'>Graduating in {{graduation_month}} {{graduation_year}} </h5>
+                                    <ul class='inline-list portfolio-social'>
+                                        <li>
+                                            <a class='special' href='{{personal_url}}'>{{personal_url}}</a>
+                                        </li>
+                                        <li>
+                                            {{#if twitter_url}}
+                                            <a href='{{twitter_url}}'>
+                                                <i class='icon-twitter'></i>
+                                            </a>
+                                            {{/if}}
+                                        </li>
+                                        <li>
+                                            {{#if facebook_url}}
+                                            <a href='{{facebook_url}}'>
+                                                <i class='icon-facebook'></i>
+                                            </a>
+                                            {{/if}}
+                                        </li>
+                                        <li>
+                                            {{#if linkedin_url}}
+                                            <a href='{{linkedin_url}}'>
+                                                <i class='icon-linkedin'></i>
+                                            </a>
+                                            {{/if}}
+                                        </li>
+                                        {{#if google_url}}
+                                        <li>
+                                            <a href='{{google_url}}'>
+                                                <i class='icon-google-plus'></i>
+                                            </a>
+                                        </li>
+                                        {{/if}}
+                                        {{#if gpa}}
+                                        <li>{{gpa}} gpa</li>
+                                        {{/if}}
+                                    </ul>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+
+                        <!-------------------------------------------------POINTS---------------------------------------------------------->
+
+                        <div class='row student-data'>
+                            <div class='large-12 columns'>
+                                <header class='module-header'>
+                                    <h4>
+                                        <span>Experience Points</span>
+                                    </h4>
+                                </header>
+                                <div class='experience-container'>
+                                    <table class='experience-points'>
+                                        <tbody>
+                                        <tr>
+                                            <th><i class='experience-icon icon-intern-coop' aria-hidden='true'></i>Technology / computer science
+                                            </th>
+                                            <td>
+                                                <div class='progress intern-coop'>
+                                                    <div class='meter' style='width:{{percent_0}}'></div>
+                                                    <span class='meter-label'>{{number_0}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-community-service' aria-hidden='true'></i>Science</th>
+                                            <td>
+                                                <div class='progress community-service'>
+                                                    <div class='meter' style='width: {{percent_1}}'></div>
+                                                    <span class='meter-label'>{{number_1}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th data-tooltip data-width='200'><i class='experience-icon icon-public-speaking'
+                                                                                 aria-hidden='true'></i>Marketing / public relations
+                                            </th>
+                                            <td>
+                                                <div class='progress public-speaking'>
+                                                    <div class='meter' style='width: {{percent_2}}'></div>
+                                                    <span class='meter-label'>{{number_2}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-research' aria-hidden='true'></i>Sales and business development
+                                            </th>
+                                            <td>
+                                                <div class='progress research'>
+                                                    <div class='meter' style='width:{{percent_3}}'></div>
+                                                    <span class='meter-label'>{{number_3}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-leadership' aria-hidden='true'></i>Financial services</th>
+                                            <td>
+                                                <div class='progress leadership'>
+                                                    <div class='meter' style='width: {{percent_4}}'></div>
+                                                    <span class='meter-label'>{{number_4}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-innovation' aria-hidden='true'></i>Human resources</th>
+                                            <td>
+                                                <div class='progress innovation'>
+                                                    <div class='meter' style='width: {{percent_5}}'></div>
+                                                    <span class='meter-label'>{{number_5}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-industry-outreach' aria-hidden='true'></i>Nonprofit / social work
+                                            </th>
+                                            <td>
+                                                <div class='progress industry-outreach'>
+                                                    <div class='meter' style='width: {{percent_6}}'></div>
+                                                    <span class='meter-label'>{{number_6}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-industry-outreach' aria-hidden='true'></i>Education</th>
+                                            <td>
+                                                <div class='progress education'>
+                                                    <div class='meter' style='width: {{percent_7}}'></div>
+                                                    <span class='meter-label'>{{number_7}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-public-speaking' aria-hidden='true'></i>Public speaking</th>
+                                            <td>
+                                                <div class='progress public-speaking'>
+                                                    <div class='meter' style='width: {{percent_8}}'></div>
+                                                    <span class='meter-label'>{{number_8}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-community-service' aria-hidden='true'></i>Community service</th>
+                                            <td>
+                                                <div class='progress community-service'>
+                                                    <div class='meter' style='width: {{percent_9}}'></div>
+                                                    <span class='meter-label'>{{number_9}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class='experience-icon icon-leadership' aria-hidden='true'></i>Leadership</th>
+                                            <td>
+                                                <div class='progress leadership'>
+                                                    <div class='meter' style='width: {{percent_10}}'></div>
+                                                    <span class='meter-label'>{{number_10}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class='experience-grid'>
+                                        <div class='divider' style='left: 11%;'></div>
+                                        <div class='divider' style='left: 22%;'></div>
+                                        <div class='divider' style='left: 33%;'></div>
+                                        <div class='divider' style='left: 44%;'></div>
+                                        <div class='divider' style='left: 55%;'></div>
+                                        <div class='divider' style='left: 66%;'></div>
+                                        <div class='divider' style='left: 77%;'></div>
+                                        <div class='divider' style='left: 88%;'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------------------------------------------------------------>
+                        <div id="portfolioInfoDiv" class='row student-data'>
+                            <div class='large-12 columns'>
+                                <h4>
+                                    <span>Portfolio information</span>
+                                </h4>
+
+                                {{#if high_school}}
+                                <h6 class='thinheader'>Went to: <em>{{high_school}}</em></h6>
+                                {{/if}}
+
+                                {{#if company}}
+                                <h6 class='thinheader'>Company: <em>{{company}}</em></h6>
+                                {{/if}}
+
+                                {{#if job_title}}
+                                <h6 class='thinheader'>Job Title: <em>{{job_title}}</em></h6>
+                                {{/if}}
+
+                                {{#if activities}}
+                                <h5 class='thinheader'>Activities</h5>
+
+                                <p>{{activities}}</p>
+                                {{/if}}
+
+                                {{#if advice}}
+                                <h5 class='thinheader'>Advice</h5>
+
+                                <p>{{advice}}</p>
+                                {{/if}}
+
+                                {{#if hindsight}}
+                                <h5 class='thinheader'>Hindsight</h5>
+
+                                <p>{{hindsight}}</p>
+                                {{/if}}
+                            </div>
+                        </div>
+
+                        <div id="experienceDiv" class='row student-data'>
+                            <div class='large-12 columns'>
+                                <h4>
+                                    <span>Experiences</span>
+                                </h4>
+                                {{#if experiences}}
+                                {{#each experiences}}
+                                <h5 class='thinheader'><strong>{{title}}</strong>, {{organization}} ({{start}} - {{end}})</h5>
+                                {{#if media}}
+                                <div class="mediaExperienceRepresentation">
+                                    <ul style=''>
+                                        {{#each media}}
+                                        {{#if data}}
+                                        {{#if id_video}}
+                                        <li>
+                                            <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}" title="{{name}}"
+                                                                                               src="//img.youtube.com/vi/{{id_video}}/1.jpg"
+                                                                                               style="width: 78px; height: 78px;"></a>
+                                        </li>
+                                        {{else}}
+                                        <li>
+                                            <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}" title="{{name}}" src='{{data}}'
+                                                                                               style="width: 78px; height: 78px;"></a>
+                                        </li>
+                                        {{/if}}
+                                        {{/if}}
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                                {{/if}}
+                                {{/each}}
+                                {{/if}}
+                            </div>
+                        </div>
+
+
+                        <div id="skillsDiv" class='row student-data'>
+                            <div class='large-12 columns'>
+                                <h4>
+                                    <span>Skills</span>
+                                </h4>
+
+                                <div class='skills'>
+                                    {{#if skills}}
+                                    {{#each skills}}
+                                    <dl class='skill-{{proficiency_level}}'>
+                                        <dt>{{name}}</dt>
+                                        <dd>{{proficiency_level}}</dd>
+                                    </dl>
+                                    {{/each}}
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="awardsDiv" class='row student-data'>
+                            <div class='large-12 columns'>
+                                <header class='module-header'>
+                                    <h4>
+                                        <span>Awards</span>
+                                    </h4>
+                                </header>
+                                {{#if awards}}
+                                <ul class='portfolio-list award-list'>
+                                    {{#each awards}}
+                                    <h5>{{title}}</h5>
+
+                                    <p>Presented by {{presentor}}</p>
+
+                                    <p style='border-bottom:thin solid #6d6d6d; '>{{description}}</p>
+                                    {{/each}}
+                                </ul>
+                                {{/if}}
+                            </div>
+                        </div>
+
+
+                        <div id="personalStatementDiv" class='row student-data'>
+                            <div class='large-12 columns'>
+                                <header class='module-header'>
+                                    <h4>
+                                        <span>Personal Statement</span>
+                                    </h4>
+                                </header>
+
+                                <div class="row">
+                                    <div class='large-12 columns'>
+                                        <p>{{personal_statement}}</p>
+                                    </div>
+                                </div>
+                                {{#if video_url}}
+                                <div class='row'>
+                                    <div id="videoContainer" class='large-12 columns'>
+                                        <p>
+                                            <iframe class="youtube-player" type="text/html" width="640" height="385"
+                                                    src="http://www.youtube.com/embed/{{id_video}}" allowfullscreen frameborder="0">
+                                            </iframe>
+                                        </p>
+                                    </div>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+
+                        <div id='footer-section'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</script>

@@ -1,0 +1,114 @@
+<script id="preventrender74557" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <div id='header-section'></div>
+            <div class='l-main'>
+                <div class='row'>
+                    <section class='large-9 columns'>
+                        <div class="large-12 columns module">
+                            <div id='profile-picture-section'>
+                                <div>
+                                    <div class='large-3 small-4 columns portfolio-photo'>
+                                        <img style="margin-top: 7%; margin-bottom: 5%" id="mainimage"
+                                             src='{{profile_image}}'/>
+
+                                        <div class='module-corner-actions'>
+                                            <a>
+                                                <i id="openLogo" class='icon-edit tip-top' title='Edit'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='basic-information-section'>
+                                <div>
+                                    <div class='large-9 small-8 columns module2' style="margin-top: 0;">
+
+                                        <header>
+                                            <h2 class='thinheader'>{{name}}</h2>
+                                            {{#if city}}
+                                            {{#if state}}
+                                            {{#if college_size}}
+                                            <h6 class='thinheader'><b>{{city}}, {{state}}</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                {{college_size}} undergrad & grad students</h6>
+                                            {{/if}}
+                                            {{/if}}
+                                            {{else}}
+                                            <h6 class='thinheader'><b>{{city}} {{state}}</b> {{college_size}}</h6>
+                                            {{/if}}
+
+                                            <h6 class='thinheader'><strong>Tell us more about {{name}}</strong></h6>
+
+                                        </header>
+                                        <div class='module-corner-actions'>
+                                            <a>
+                                                <i id="editCollegeInformation" class='icon-edit tip-top' title='Edit'></i>
+                                            </a>
+                                        </div>
+                                        <div class='portfolio-extra'>
+                                            <h5 class='thinheader'><strong>{{tagline}}</strong></h5>
+                                            <ul class='inline-list portfolio-social'>
+                                                {{#if college_website}}
+                                                <li>
+                                                    <a target="_blank" class='special' href='{{college_website}}'>{{college_website}}</a>
+                                                </li>
+                                                {{/if}}
+                                                {{#if twitter_url}}
+                                                <li>
+                                                    <a target="_blank" href='{{twitter_url}}'>
+                                                        <i class='icon-twitter'></i>
+                                                    </a>
+                                                </li>
+                                                {{/if}}
+                                                {{#if facebook_url}}
+                                                <li>
+                                                    <a target="_blank" href='{{facebook_url}}'>
+                                                        <i class='icon-facebook'></i>
+                                                    </a>
+                                                </li>
+                                                {{/if}}
+                                                {{#if linkedin_url}}
+                                                <li>
+                                                    <a target="_blank" href='{{linkedin_url}}'>
+                                                        <i class='icon-linkedin'></i>
+                                                    </a>
+                                                </li>
+                                                {{/if}}
+                                                {{#if google_url}}
+                                                <li>
+                                                    <a target="_blank" href='{{google_url}}'>
+                                                        <i class='icon-google-plus'></i>
+                                                    </a>
+                                                </li>
+                                                {{/if}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='description'>
+                            <div class='large-9 small-8 columns module' style="padding: 15px;">
+                                <h4>
+                                    <span>About {{name}}</span>
+                                </h4>
+                                <h6 class='thinheader'> {{description}}</h6>
+                            </div>
+                        </div>
+                        <div id='media-section'>
+                        </div>
+                        <div id='candidates-section'>
+                        </div>
+                    </section>
+                    <section class='large-3 columns'>
+                        <div id='events-section'>
+                        </div>
+                    </section>
+                    <div id='sponsors-section' class='large-3 columns'></div>
+                </div>
+            </div>
+            <div id='footer-section'></div>
+        </div>
+
+    </article>
+</script>

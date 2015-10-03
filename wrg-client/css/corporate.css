@@ -1,0 +1,92 @@
+#nav{
+	height:167px;
+	background: rgba(0, 0, 0, 0);
+	position: relative;
+}
+#navBottom{
+	border-bottom: 13px solid rgb(239, 236,234);
+	position: relative;
+	z-index: 10000;
+}
+#menuOutside {
+	display: block;
+	z-index: 1;
+	position: relative;
+
+	/* custom sizes */
+	width: 750px;
+	height: 57px;
+	bottom: -29px;
+	margin: 100px auto;
+	text-align: center;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 40px;
+	background-color: rgb(58, 58, 60);
+}
+#menuOutside:before,
+#menuOutside:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	z-index: -1;
+	background-color: rgb(58, 58, 60);
+	/* demo-only decoration */
+	border-radius: 12px;
+}
+	
+#menuOutside:before {
+	transform: skew(25deg);
+	-webkit-transform: skew(25deg);
+	-moz-transform: skew(25deg);
+	left: 25px;
+}
+.wrg-gray{
+	color: rgb(58, 58, 60);
+}
+#menuOutside:after {
+	transform: skew(-25deg);
+	-webkit-transform: skew(-25deg);
+	-moz-transform: skew(-25deg);
+	right: 25px;
+	left: auto;
+}
+#logo{
+	height: 0px;
+}
+#logo img{
+    position: relative;
+    z-index: 10000000;
+    left: 305px;
+    top: 0px;
+}
+#register-message{
+	height: 0px;
+    position: relative;
+    z-index: 10000000;
+    left: 575px;
+    top: 96px;
+}
+.or-class{
+	font-size: 15px;
+	color: rgb(188, 190, 192);
+	padding: 2px;
+	position: relative;
+	top: -2px;
+}
+#loginRegister{
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+#aboutContact{
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+}
+img.profile-image.standard-spacing{
+	margin-bottom: 15px;
+}

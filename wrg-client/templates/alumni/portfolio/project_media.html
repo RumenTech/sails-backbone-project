@@ -1,0 +1,46 @@
+<div class='reveal-modal' id='project-media-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Media</h2>
+        </div>
+    </div>
+    <form class='custom'>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='slideshow-wrapper'>
+                    <ul data-orbit>
+                        {{#each media}}
+                        <li>
+                            <div class='row'>
+                                {{#if data}}
+                                <div class='large-12 columns center'>{{name}}</div>
+                                <div class='large-12 columns'>
+                                    {{#if id_video}}
+                                    <iframe class="youtube-player" type="text/html" width="500" height="500" src="{{embedded}}" allowfullscreen="" frameborder="0">
+                                    </iframe>
+                                    {{else}}
+                                    <img src='{{data}}' width="500px" height="500px">
+                                    {{/if}}
+                                </div>
+                                {{else}}
+                                <div class='large-12 columns'>{{name}}</div>
+                                <div class='large-12 columns'>
+                                    <img src='//placehold.it/500x500'>
+                                </div>
+                                {{name}}
+
+                                {{/if}}
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="orbit-timer">
+                    <span></span>
+                    <div class="orbit-progress" style="width: 100%; -webkit-transition: width 10s linear;"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal close-modal'>×</a>
+</div>

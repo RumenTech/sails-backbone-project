@@ -1,0 +1,14 @@
+<article>
+    <div class="original">
+        {{#if role }}
+        <li>
+            {{#if profileImage}}
+            <img style="cursor:pointer" title="{{firstName}} {{lastName}}" class='groupUserImage' src="{{profileImage}}"/>
+            {{else}}
+            <img style="cursor:pointer" title="{{firstName}} {{lastName}}" class='groupUserImage' src='//placehold.it/80x80'/>
+            {{/if}}
+        </li>
+        {{/if}}
+    </div>
+
+</article>

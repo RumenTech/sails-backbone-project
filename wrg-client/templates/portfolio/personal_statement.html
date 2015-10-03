@@ -1,0 +1,30 @@
+<article>
+    <div class="original">
+        <div class="module">
+            <div class='large-12 columns'>
+                <header class='module-header'>
+                    <h4>
+                        <span>Personal Statement Video</span>
+                        <a>
+                            <i class='icon-edit tip-top' title='Edit'></i>
+                        </a>
+                    </h4>
+                </header>
+                <div class="row">
+                    <div class='large-12 columns'>
+                        <p>{{{personal_statement}}} </p>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div id="videoContainer" class='large-12 columns'>
+                        <!--<iframe class="youtube-player" type="text/html" width="640" height="385" src="{{video_url}}" allowfullscreen frameborder="0">-->
+                        <iframe id="videoiframe" class="youtube-player videoFixForIE" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/{{id_video}}?wmode=transparent" allowfullscreen frameborder="0">
+                        </iframe>
+                        <!-- <img src='{{video_url}}' />-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

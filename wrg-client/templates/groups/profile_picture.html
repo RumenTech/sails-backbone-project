@@ -1,0 +1,19 @@
+<article>
+    <div class="original">
+        <div class='large-3 small-4 columns portfolio-photo'>
+            {{#if groupImage}}
+            <img id="mainimage" src='{{groupImage}}' style='width:180px; height:180px' />
+            {{else}}
+            <img id="mainimage" src="//placehold.it/180x180" style='width:180px; height:180px' />
+            {{/if}}
+            {{#if role}}
+            <div class='module-corner-actions'>
+                <a>
+                    <i class='icon-edit tip-top' id='editPicture' title='Edit'></i>
+                </a>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+
+</article>

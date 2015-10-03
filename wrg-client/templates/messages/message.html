@@ -1,0 +1,68 @@
+<article>
+    <div class="original">
+        <div  class="large-12 columns" id='message-{{id}}' style='background-color: #efefef'>
+            <div id='full-message' class='large-2 columns' style="margin-top: 5px; cursor: pointer;'">
+                {{#if messageimage}}
+                <img src='{{messageimage}}' class='groupUserMessageImage'>
+                {{else}}
+                <img src='//placehold.it/60x60'>
+                {{/if}}
+            </div>
+            <div class='large-10 columns'>
+                <div class="row">
+                    <div id='sender-name' class='large-5 columns'>
+                        {{first_name}} {{last_name}} {{#if group_id}} Group: ({{name}}) {{/if}}
+                    </div>
+                    <div id='subject-id' class='large-5 columns'>
+                        {{#if subject}}
+                        Subject: {{subject}}
+                        {{/if}}
+                    </div>
+                    {{#if deleted}}
+                    {{else}}
+                    <div class="module-corner-actions">
+                        <a>
+                            <i id="delete-link" class='icon-delete tip-top' title='Delete Message'></i>
+                        </a>
+                    </div>
+                    {{/if}}
+                </div>
+                <p style="word-wrap:break-word; font-size: 14px">{{shortContent}}</p>
+            </div>
+        </div>
+        {{#if deleted}}
+        <div class="large-12 columns"  style="border-bottom: 1px solid #b5b0af;">
+            <div class="large-6 columns right" >
+                <p class='message-date' style='font-size: 14px'>{{messageDate}}</p>
+            </div>
+        </div>
+
+        {{else}}
+        <div class="large-12 columns"  style="border-bottom: 1px solid #b5b0af; background-color: #efefef;"  id='messagebottom-{{id}}'>
+            {{#if group_id}}
+            {{else}} {{#if sender_id}}
+            <div class='bottom-message'>
+                <div class="large-2 columns">
+                    <a class='reply-message' id="reply-link">Reply</a>
+                </div>
+                <div class="large-2 columns">
+                    <a class='reply-message' id="forward-link">Forward</a>
+                </div>
+                {{#if canFlag}}
+                <div class="large-2 columns">
+                    <a class="glyphicon glyphicon-flag" id='flag-{{id}}'></a>
+                </div>
+                {{/if}}
+                <div class="large-6 columns">
+                    <p class='message-date'>{{messageDate}}</p>
+                </div>
+
+            </div>
+            <!--You cannot reply to group messages-->
+            {{/if}}
+            {{/if}}
+        </div>
+        {{/if}}
+    </div>
+
+</article>

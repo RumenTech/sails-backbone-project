@@ -1,0 +1,22 @@
+<article>
+    <div class="original">
+        {{#if college}}
+        <p class='college-not-set'>
+            You need to have your school set. You can do it by editing your profile.
+        </p>
+        <ul id="tabsContainer" style='list-style:none'></ul>
+        {{else}}
+
+        <h2 class="thinheader">Career Path</h2>
+
+        <p class="thinheader" style="margin-bottom: 10px">Where do you want to go after? Here are resources you can check out.</p>
+
+        <div class="large-12">
+            <div class="custom-menu">
+                <ul id="tabsContainer"></ul>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+
+</article>

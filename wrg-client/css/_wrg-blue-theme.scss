@@ -1,0 +1,15 @@
+@import "bootstrap/variables";
+
+input + small, textarea + small {
+  color: $gray;
+  margin-left: 5px;
+}
+
+.panel-title {
+  a > span { &:before { content: "\e159"; } }
+  a.collapsed > span { &:before { content: "\e158"; } }
+
+}
+.panel-body .form-group textarea {
+  height: 228px;
+}

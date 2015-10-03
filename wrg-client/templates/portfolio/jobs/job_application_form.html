@@ -1,0 +1,37 @@
+<div class='reveal-modal medium' id='profile-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Apply for this position</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='validation-messages large-12 columns'></div>
+    </div>
+    <form id="imgform" action="{{imageManipulationEndPoint}}" method="post" name="fileinfo" id="fileinfo" class='custom' enctype="multipart/form-data">
+        <div class='row'>
+            <div class='large-12 columns panel'>
+                <div class='large-12 columns'>
+                    <div id='attachment'>Attach a Cover Letter * (.pdf)</div>
+                </div>
+                <div class='large-12 columns' style='padding-top:10px'>
+                    <div class='large-3 columns'>
+                        <input id='file' accept="application/pdf" name="file" type='file' placeholder='Select File'>
+                        <input id="uploadFiles" type="submit" value="Upload File to Server">
+                    </div>
+                    <div class='large-1 columns'>
+                        <div id="loaderIcon"></div>
+                    </div>
+                    <div class='large-8 columns'>
+                        <input id='attachedFile' type='text'/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class='large-12 columns'>
+        <div class='form-actions' style="margin-top: 2%">
+            <input id="applyForJob" type="button" class='button save-button' value='Apply'/>
+        </div>
+    </div>
+    <a class='close-reveal-modal'>×</a>
+</div>

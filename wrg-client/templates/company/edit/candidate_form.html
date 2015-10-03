@@ -1,0 +1,186 @@
+<div class='reveal-modal medium' id='award-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Ideal Candidates</h2>
+        </div>
+    </div>
+    <form class='custom'>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='validation-messages large-12 columns'></div>
+                    </div>
+                    <div class='row'>
+                    <div class='large-6 columns'>
+                        <select id='department' class="styled-select-time tk-museo-sans wrg-select"  placeholder='Department'>
+                            <option value="Department">Department</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Information Technology (IT)">Information Technology (IT)</option>
+                            <option value="Finance/Accounting">Finance/Accounting</option>
+                            <option value="Production">Production</option>
+                            <option value="Customer Service">Customer Service</option>
+                            <option value="Human Resources">Human Resources</option>
+                            <option value="Research & Design">Research & Design</option>
+                            <option value="Operations">Operations</option>
+                            <option value="Legal">Legal</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                        <div class='large-6 columns'>
+                            <input id='position' placeholder='Enter Position.' type='text' />
+                        </div>
+                    </div>
+                    Maximum 500 Characters
+                    <div class="row">
+                        <div class='large-12 columns'>
+                            <textarea rows="5" id='requireddescription' placeholder='Required Qualifications / Skills / Expertise' type='text' />
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class='large-12 columns'>
+                            <textarea rows="5" id='preffereddescription' placeholder='Preferred Qualifications / Skills / Expertise' type='text' />
+                        </div>
+                    </div>
+                    Please enter desired skills
+                    <div class="row">
+                        <div class='large-12 columns'>
+                            <input rows="5" id='keywords' placeholder='Please enter skill keywords, comma separated, without blank spaces' type='text' />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                     <h2 class='thinheader'>Ideal Candidates Experience requirements:</h2>
+
+                </div>
+                    <div class='experience-container'>
+                        <table class='experience-points'>
+                            <tbody>
+                             <!--Internship-->
+                            <tr>
+                                <th data-tooltip data-width='200'
+                                    title="Internships you have completed">
+                                    <i class='experience-icon icon-intern-coop' aria-hidden='true'></i>Internship/Co-op</th>
+                                <td>
+                                    <div class='progress intern-coop-future'>
+                                        <div id="intern-slider-range-min" data-tooltip data-width='400'
+                                             title="{{future_note_0}}" class="futureExperinceInput" style="width: 430px; margin-top: 10px" ></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                             <!--Community Service-->
+                             <tr>
+                                 <th data-tooltip data-width='200'
+                                     title="Civic - minded projects you've participated in or civic-minded organizations to which you belong.">
+                                     <i class='experience-icon icon-community-service' aria-hidden='true'></i>Community Service</th>
+                                 <td>
+                                     <div class='progress community-service-future'>
+                                         <div id="community-slider-range-min" data-tooltip data-width='400'
+                                               class="futureExperinceInput" style="width: 430px; margin-top: 10px" ></div>
+                                     </div>
+                                 </td>
+                             </tr>
+
+                           <!--  Public Speaking-->
+                             <tr>
+                                 <th data-tooltip data-width='200'
+                                     title="For example, joining Toastmasters or your school's public speaking club"><i
+                                         class='experience-icon icon-public-speaking' aria-hidden='true'></i>Public Speaking
+                                 </th>
+                                 <td>
+                                     <div class='progress public-speaking-future'>
+                                         <div id="public-slider-range-min" data-tooltip data-width='400'
+                                               class="futureExperinceInput" style="width: 430px; margin-top: 10px" ></div>
+                                     </div>
+                                 </td>
+                             </tr>
+
+                             <!--Research-->
+                             <tr>
+                                 <th data-tooltip data-width='200'
+                                     title="Research you have completed">
+                                     <i class='experience-icon icon-research' aria-hidden='true'></i>Research</th>
+                                 <td>
+                                     <div class='progress research-future'>
+                                         <div id="research-slider-range-min" data-tooltip data-width='400'
+                                               class="futureExperinceInput" style="width: 430px; margin-top: 10px"></div>
+                                     </div>
+                                 </td>
+                             </tr>
+
+                             <!--Leadership-->
+                             <tr>
+                                 <th data-tooltip data-width='200'
+                                     title="Officer roles within a club/organization/company">
+                                     <i class='experience-icon icon-leadership' aria-hidden='true'></i>Leadership</th>
+                                 <td>
+                                     <div class='progress leadership-future'>
+                                         <div id="leadership-slider-range-min" data-tooltip data-width='400'
+                                               class="futureExperinceInput" style="width: 430px; margin-top: 10px"></div>
+                                     </div>
+                                 </td>
+                             </tr>
+
+                             <!--Innovation-->
+                             <tr>
+                                 <th data-tooltip data-width='200'
+                                     title="Having designed and built or implemented a new way of solving an meaningful problem.">
+                                     <i class='experience-icon icon-innovation' aria-hidden='true'></i>Innovation</th>
+                                 <td>
+                                     <div class='progress innovation-future'>
+                                         <div id="innovation-slider-range-min" data-tooltip data-width='400'
+                                               class="futureExperinceInput" style="width: 430px; margin-top: 10px"></div>
+                                     </div>
+                                 </td>
+                             </tr>
+
+                             <!--Industry Outreach-->
+                             <tr>
+                                 <th data-tooltip data-width='200'
+                                     title="Taking the initiative to connect alumni / local professionals in your fields of
+                            interest and conduct an informational interview over coffee or over the phone.">
+                                     <i class='experience-icon icon-industry-outreach' aria-hidden='true'></i>Industry Outreach</th>
+                                 <td>
+                                     <div class='progress industry-outreach-future'>
+                                         <div id="industry-slider-range-min" data-tooltip data-width='400'
+                                               class="futureExperinceInput" style="width: 430px; margin-top: 10px"></div>
+                                     </div>
+                                 </td>
+                             </tr>
+
+                             <!--Grit-->
+                             <tr>
+                                 <th data-tooltip data-width='200'
+                                     title="Taking the initiative to connect alumni / local professionals in your fields of
+                            interest and conduct an informational interview over coffee or over the phone.">
+                                     <i class='experience-icon icon-industry-outreach' aria-hidden='true'></i>Grit</th>
+                                 <td>
+                                     <div class='progress industry-outreach-future'>
+                                         <div id="grit-slider-range-min" data-tooltip data-width='400'
+                                               class="futureExperinceInput" style="width: 430px; margin-top: 10px"></div>
+                                     </div>
+                                 </td>
+                             </tr>
+
+                        </table>
+                        <div class='row'>
+                            <div class='large-12 columns form-actions'>
+                                <input id="deleteCandidate" class='button delete-button' type="button" value='Delete' />
+                            </div>
+                        </div>
+                        <br>
+                        <div class='row'>
+                            <div class='large-12 columns form-actions'>
+                                <input class='button save-button' type="button" value='Save' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

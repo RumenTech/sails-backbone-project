@@ -1,0 +1,56 @@
+<article>
+    <div class="original">
+        <div class="module">
+            <div class='row'>
+                <div class='validation-messages large-12 columns'></div>
+            </div>
+            <div class="large-10 columns">
+        <span class="large-5 columns" style="padding-right:0;">
+            <span class="span-first_name">{{first_name}}</span>
+            <input type="text" value="{{first_name}}" class="input-first_name large-6 columns" style="display: none; width: 48%; padding-right: 0.5em;">
+            <span class="span-last_name">{{last_name}}</span>
+            <input type="text" value="{{last_name}}" class="input-last_name large-6 columns" style="display: none; width: 48%; float: left;">
+        </span>
+        <span class="large-7 columns">
+            <span class="span-email"> <strong>{{email}}</strong>
+                {{#if aux}}
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a style="text-decoration:underline;border-bottom: rgb(0, 179, 241)" id="change-password">Change pswd</a></span>
+                {{/if}}
+            </span>
+            <input type="text" value="{{email}}" class="input-email" style="display: none">
+            <input type="text" class="input-password" style="display: none">
+
+        </span>
+            </div>
+            <div class="large-2 columns">
+        <span class='span-actions'>
+            <span>
+                {{#if aux}}
+                <a class="large-6 columns">
+                    <li class="icon-edit tip-top" title="Edit"></li>
+                </a>
+                {{else}}
+                <a class="large-6 columns">
+                    <li class="icon-edit tip-top" title="Edit"></li>
+                </a>
+                <a class ="large-6 columns"id="delete-item" title="Delete">
+                    <li >X</li>
+                </a>
+                {{/if}}
+            </span>
+        </span>
+        <span class='input-actions' style="display: none">
+            <input class='button save-button large-12' id="save-user" value='Done'/>
+        </span>
+                <input type="button" class="save-password button save-button large-12" value='Done' style="display: none"/>
+
+            </div>
+            <div class='row'>
+                <div class='validation-messages large-12 columns'></div>
+            </div>
+        </div>
+    </div>
+
+</article>

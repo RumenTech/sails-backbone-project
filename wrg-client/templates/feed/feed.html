@@ -1,0 +1,95 @@
+<script id="preventrender75427" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            {{#if_eq event_type "profileImageChanged"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 0px"><a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a> added new
+                    profile image</p>
+                <img style="width: 60px; height: 60px; margin-top: 5px; margin-bottom: 5px; " src="{{image}}">
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "newUser"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px">New {{user_role}} registered: <a style="color: dodgerblue"
+                                                                               href="{{user_url}}">{{user_name}}</a></p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "experienceAdded"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px"><a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a> added new
+                    experience: {{image}}</p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "experienceUpdated"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px"><a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a> updated
+                    experience: {{image}}</p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "awardAdded"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px"><a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a> added new
+                    award: {{image}}</p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "awardUpdated"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px"><a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a> updated
+                    award: {{image}}</p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "skillsAdded"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px"><a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a> added
+                    skills: {{image}}</p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "connection"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px">
+                    <a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a>
+                    is now friend with
+                    <a style="color: dodgerblue" href="{{connection_url}}">{{connection_name}}</a>
+                </p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "groupCreated"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px">
+                    <a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a>
+                    created a group
+                    <a style="color: dodgerblue" href="#group_readonly/{{group_id}}">{{group_name}}</a>
+                </p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "newMember"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px">
+                    <a style="color: dodgerblue" href="{{user_url}}">{{user_name}}</a>
+                    is now member of group
+                    <a style="color: dodgerblue" href="#group_readonly/{{group_id}}">{{group_name}}</a>
+                </p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "newJob"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px">
+                    <a style="color: dodgerblue" href="#company/{{company_id}}">{{company_name}}</a>
+                    posted a new job
+                    <a style="color: dodgerblue" href="#job_student/{{job_id}}">{{job_name}}</a>
+                </p>
+            </div>
+            {{/if_eq}}
+            {{#if_eq event_type "newChallenge"}}
+            <div style="border-bottom: 1px solid">
+                <p style="margin-bottom: 3px">
+                    <a style="color: dodgerblue" href="#company/{{company_id}}">{{company_name}}</a>
+                    posted a new challenge
+                    <a style="color: dodgerblue" href="#challenge_student/{{challenge_id}}">{{challenge_name}}</a>
+                </p>
+            </div>
+            {{/if_eq}}
+        </div>
+
+    </article>
+</script>

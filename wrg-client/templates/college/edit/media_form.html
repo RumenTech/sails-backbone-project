@@ -1,0 +1,68 @@
+<div class='reveal-modal medium'>
+    <div class='large-12 columns'>
+        <div class='panel'>
+            <div class='row'>
+                <div class='validation-messages large-12 columns'></div>
+            </div>
+            <div class='row'>
+                <form enctype="multipart/form-data" action="{{imageManipulationEndPoint}}" method="post" name="fileinfo" id="fileinfo" class='custom'>
+                    <div class='large-3 columns'>
+                        <input id='file-image' accept="image/*" name="image" type='file' >
+                        <input id="uploadFiles" type="submit" style="visibility:hidden;" value="Upload File to Server">
+                    </div>
+                    <div id="loaderIcon"></div>
+                </form>
+                <div class='large-9 columns'>
+                    <input id="photoUrl" placeholder='Photo url' type='text'/>
+                </div>
+            </div>
+            <div class='large-1 column'>
+                <img src='{{profile_image}}' id='profile-img'>
+            </div>
+            <div class="row">
+                <div class='large-12 columns'>
+                    <textarea rows="5" class='photoClass' id='photoCaption' maxlength='500' placeholder='Include caption for your photo here' type='text' />
+                </div>
+                <div class='large-12 columns form-notice'>
+                    <p>500 character limit</p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='large-12 columns form-actions'>
+                    <input id="addPhoto" class='button add-photo-button' type="button" value='Add Image' />
+                    <input style="display: none" id="cancelPhotoEdit" class='button' type="button" value='Cancel' />
+                    <input style="display: none" id="savePhotoEdit" class='button' type="button" value='Save Changes' />
+                </div>
+            </div>
+        </div>
+        <div class='panel'>
+            <div class='row'>
+                <div class='large-12 columns'>
+                    <input id='videoUrl' placeholder='Insert valid video url here' type='text'/>
+                </div>
+            </div>
+            <div class="row">
+                <div class='large-12 columns'>
+                    <textarea rows="5" id='videoCaption' maxlength='500' placeholder='Include caption for your video here' type='text' />
+                </div>
+                <div class='large-12 columns form-notice'>
+                    <p>500 character limit</p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='large-12 columns form-actions'>
+                    <input id="addVideo" class='button add-video-button' type="button" value='Add Video' />
+                    <input style="display: none" id="cancelVideoEdit" class='button' type="button" value='Cancel' />
+                    <input style="display: none" id="saveVideoEdit" class='button' type="button" value='Save Changes' />
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='large-11 columns' id='loadedImages'></div>
+                <div class='large-1 columns' id='deleteImages'></div>
+            </div>
+        </div>
+    </div>
+    <a class='close-reveal-modal'>×</a>
+</div>

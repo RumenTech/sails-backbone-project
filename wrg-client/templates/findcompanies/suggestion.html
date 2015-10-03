@@ -1,0 +1,24 @@
+<script id="preventrender757" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <a id="companyLink">
+                <div class='connection'>
+                    <div class='connection-photo' style='cursor: pointer'>
+                        {{#if profile_image}}
+                        <img class='small-companies' src='{{profile_image}}'/>
+                        {{else}}
+                        <img src='//placehold.it/200x200'/>
+                        {{/if}}
+                    </div>
+                    <div class='connection-info' style='cursor: pointer'>
+                        <h3 class='thinheader'>{{name}}</h3>
+                        {{#if city}} {{#if state}}
+                        <h6 class='thinheader'>{{city}}, {{state}}</h6>
+                        {{/if}} {{/if}}
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </article>
+</script>

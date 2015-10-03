@@ -1,0 +1,16 @@
+#about-text{
+	position: relative;
+	top: -9px;
+	font-weight: 300;
+	font-size: 23px;
+	margin-bottom: 10px;
+}
+.aboutbold{
+	font-weight: 500;
+}
+#about-meat{
+	background-color:rgb(218, 215, 214);
+	padding-left:50px;
+	padding-right: 50px;
+	border-bottom: 13px solid rgb(239, 236,234);	
+}

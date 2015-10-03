@@ -1,0 +1,36 @@
+<article>
+    <div class="original">
+        <div class="row">
+            <div class="large-12 columns challenge">
+                <div class="large-2 columns">
+                    {{#if company_image}}
+                    <img class='challengeImage' src="{{company_image}}">
+                    {{else}}
+                    <img class='challengeImage' src="//placehold.it/80x80">
+                    {{/if}}
+                </div>
+                <div class="large-10 large-offset-2">
+                    <div class="module-corner-actions inline-list">
+                        <a>
+                            <i id="editChallengediv{{id}}"  class='icon-edit tip-top' title='Edit'></i>
+                        </a>
+                        <a>
+                            <i id="deleteChallenge{{id}}" class='icon-delete tip-top' title='Delete'></i>
+                        </a>
+                    </div>
+                    <a id="viewChallenge">
+                        <div>
+                            <h5>{{challenge_title}}</h5>
+                        </div>
+                        <div>
+                            <label class="submittedBy">Submited by {{contact_name}}</label>
+                            <label class="postedOn">Posted on {{postedOn}}</label>
+                        </div>
+                        <label> {{{challenge_description_short}}}</label>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

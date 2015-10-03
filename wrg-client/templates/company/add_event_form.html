@@ -1,0 +1,52 @@
+<div class='reveal-modal medium' id='profile-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Upcoming events</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='validation-messages large-12 columns'></div>
+    </div>
+    <form class='custom'>
+
+        <div class='large-12 columns'>
+            <div class='panel'>
+                <div class='row'>
+                    <div class='large-12 columns'>
+                        <input id='event-name' placeholder='Event Name' type='text' />
+                    </div>
+                    <div class='large-6 columns'>
+                        <div class='ui-widget'>
+                            <input id='event-date' placeholder='Event Date' type='text' />
+                        </div>
+                    </div>
+                    <div class='large-3 columns'>
+                        <div class='ui-widget'>
+                            <input id='event-start' placeholder='Start time' type='text' />
+                        </div>
+                    </div>
+                    <div class='large-3 columns'>
+                        <div class='ui-widget'>
+                            <input id='event-end' placeholder='End time' type='text' />
+                        </div>
+                    </div>
+                    <div class='large-12 columns'>
+                        <input id='event-location' placeholder='Event Location' type='text' />
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='large-12 columns form-actions'>
+                        <input id="deleteEvent" type="button" class='button delete-button' value='Delete' />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='large-12 columns form-actions'>
+                <input id="saveEvent" type="button" class='button save-button' value='Save' />
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

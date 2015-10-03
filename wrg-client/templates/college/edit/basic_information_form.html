@@ -1,0 +1,147 @@
+<div class='reveal-modal medium' id='profile-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>College Profile Information</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='validation-messages large-12 columns'></div>
+    </div>
+    <form class='custom'>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <select id='college-size' class="styled-select tk-museo-sans wrg-select" placeholder='College size'>
+                                <option value=''>College size</option>
+                                <option value='0-200'>Small is 0-200</option>
+                                <option value='200-500'>Medium is 200-500</option>
+                                <option value='500+'>Large is 500+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <input id='state' placeholder='State' type='text' />
+                        </div>
+                        <div class='large-6 columns'>
+                            <input id='city' placeholder='City' type='text' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <input class='url validator' id='college-website' placeholder='College Website URL' type='text' />
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                      <span class='prefix radius'>
+                                        <i class='icon-facebook'></i>
+                                      </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='facebook-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                  <span class='prefix radius'>
+                                    <i class='icon-linkedin'></i>
+                                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='linkedin-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                  <span class='prefix radius'>
+                                    <i class='icon-google-plus'></i>
+                                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='google-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                                  <span class='prefix radius'>
+                                    <i class='icon-twitter'></i>
+                                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='twitter-url' placeholder='Copy &amp; paste your URL' type='text' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='large-6 columns'>
+
+                        </div>
+                        <div class='large-6 columns'>
+                            <input type="checkbox" id="show-twitter">Display twitter feed on profile
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <input length='50' id='tagline' placeholder='Write a tagline about your college!' type='text' />
+                        </div>
+                    </div>
+                    <div class='row bottom-collapse'>
+                        <div class='large-12 columns form-notice'>
+                            <p>50 character limit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <textarea rows="5" length='500' id='description' placeholder='Tell us more about your college' />
+                        </div>
+                    </div>
+                    <div class='row bottom-collapse'>
+                        <div class='large-12 columns form-notice'>
+                            <p>500 character limit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns form-actions'>
+                <input id="saveCollegeInformation" class='button save-button' type='button' value='Save' />
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

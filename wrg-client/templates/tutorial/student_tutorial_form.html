@@ -1,0 +1,180 @@
+<script id="preventrender73557" type="text/x-handlebars-template">
+    <div class="large-12 columns form-actions">
+        <div id="slideList">
+            <!--FIRST SLIDE CONTENT-->
+            <div style="background-color: #00AFEC !important" id="firstSlide" class="tutorialslides showCurrentSlide">
+                <div id="photo-modal" class="row">
+                    <div class="large-12 columns center">
+                        <h2 style="color: white" class="tutorialHeaderText">Add your favorite pic of yourself...</h2>
+
+                        <form id="imgform" action="{{imageManipulationEndPoint}}" method="post"
+                              enctype="multipart/form-data">
+                            <div style="width: 50%; margin-left: 25%">
+                                <img id="profile-img" class="imageInCircle" src="{{profile_image}}">
+                                <input type="hidden" id="profile-image" value="{{profile_image}}">
+
+                                <div style="color: white; font-size: 20px; margin-top: 5%">Adding a professional
+                                    picture will
+                                    increase the likelyhood that you’ll get noticed by the right people.
+                                </div>
+                                <div style="padding-top: 25px;">
+                                    <a type="submit" class="btn btn-default">
+                                        <span style="font-size:40px; top: 15px; margin-right: 10px;"
+                                              class="glyphicon glyphicon-hand-right"></span>
+                                    </a>
+                                    <button id="add-media-image" class="zfix" type="button"
+                                            title="Add image to your profile or change existing one"
+                                            class="button"><span class="glyphicon glyphicon-plus"></span> Add
+                                        Photo
+                                    </button>
+                                </div>
+                                <div class="large-12">
+                                    <div class="validation-messages large-12 columns"></div>
+                                </div>
+                                <input id="file-image" accept="image/*" name="image" type="file"
+                                       style="display: none;">
+                                <input id="uploadFiles" type="submit" style="visibility:hidden;"
+                                       value="Upload File to Server">
+
+                                <div id="loader"></div>
+                                <div id="cropContainer" class="large-12 columns center" style="display: none">
+                                    <p>Select cropping for your image</p>
+                                    <img id="cropImage">
+
+                                    <div class='row' style="padding-top: 15px">
+                                        <input class='button' type="button" id='finalcrop' value='Crop Image'>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--SECOND SLIDE CONTENT-->
+            <div id="secondSlide" class="tutorialslides hideCurrentSlide">
+                <div class="large-12 columns form-actions">
+                    <h4 style="color: black">
+                        WorkReadyGrad lets you showcase your skills and
+                        experiences to employers looking for top talent on your campus.<br> Set goals for yourself
+                        and collect WorkReadyGrad Experience Points!
+                    </h4>
+                </div>
+                <div class="large-12 columns form-actions">
+                    <div><img src="/img/tutorials/student/slideone.jpg"></div>
+
+                    <div style="margin-top: 20px;"><span class="circle">A</span> This is where you edit all your
+                        personal information. Add links to social
+                        media and add a personal statement. The <i class="icon-edit" title="Edit"></i> symbol allows you
+                        to
+                        edit and enhance your profile.
+                    </div>
+                    <br>
+
+                    <div><span class="circle">B</span> This is the summary of your experiences. To employers searching
+                        for top
+                        talent, your WorkReadyGrad Experience Point Summary
+                        represents the most important 21st century soft skills that you posess. Each time you add an
+                        experience to your portfolio, you’ll tag the appropriate type
+                        of experience that represents what you’ve accomplished. (i.e. Internship, Leadership, Research)
+                    </div>
+                    <br>
+
+                    <div><span class="circle">C</span> Upload pictures and video of your experience and add a brief
+                        description of
+                        what you learned.
+                    </div>
+                    <br>
+                    <input class="button save-button" type="button" value="Go to portfolio"/>
+                </div>
+            </div>
+
+            <!--THIRD SLIDE CONTENT-->
+            <div id="thirdSlide" style="background-color: #00AFEC !important" class="tutorialslides hideCurrentSlide">
+                <div class="large-12 columns form-actions"><h5>Now, check out a few of our Alumni Success Stories from
+                    current
+                    college students and industry proffesionals. <br>They’ve dug through the
+                    trenches, survived and have a few words of advice. Listen up younglin’. </h5>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <img src="/img/tutorials/student/slidetwo.jpg"> <br> <br>
+                        <input id="gotoAlumniUrl" style="float: right" class="button" type="button" value="Go!"/>
+
+                        <div style="overflow: hidden; padding-right: 1.0em;">
+                            <input id="tutorial-Alumni-Search" class="tutorialEnterKey" maxlength='50' name="name"
+                                   placeholder="Search for alumni by name, club, or organization." type="text"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--FOURTH SLIDE CONTENT-->
+            <div id="fourthSlide" style="background-color: #00AFEC !important" class="tutorialslides hideCurrentSlide">
+                <div class="introductionText center">Now lets see who you know. Search for familiar faces on
+                    WorkReadyGrad.
+                    <br>
+                    Looks like they’ve already gotten the ball rolling…time to catch up!<br><br>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <input id="gotoFriendsUrl" style="float: right" class="button" type="button" value="Go!"/>
+
+                        <div style="overflow: hidden; padding-right: 1.0em;">
+                            <input id="tutorial-Friend-Search" class="tutorialEnterKey" maxlength='50' name="name"
+                                   placeholder="Search for friends by name, school, major, or email." type="text"/>
+                        </div>
+                        <img class="slideTwoImage" src="/img/tutorials/student/slidethree.jpg"> <br> <br>
+                    </div>
+                    <hr>
+                    <div>Can’t find anyone you know, don’t fret – you can also invite your friends by importing your
+                        social media contacts. The bigger we grow, the better your experience!
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!--FIFTH SLIDE CONTENT-->
+            <div id="fifthSlide" style="background-color: #00AFEC !important" class="tutorialslides hideCurrentSlide">
+                <div class="introductionText center"> Are you a member of any organizations on campus?<br> Find them
+                    here or
+                    discover new ones to join.<br> <br> Here is the perfect place to find others that share common
+                    interests
+                    as
+                    you.<br> Seriously...check it out.. <br>
+                    <h5 class="center" style="color: white;">Top Groups</h5>
+                    <hr>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="large-12 columns">
+                        <img src="/img/tutorials/student/slidefour.jpg"> <br> <br>
+
+                        <div style="color: white;">If you know what specific group you are looking for, search for it
+                            here…
+                        </div>
+                        <br>
+                        <input id="gotoSearchGroupUrl" style="float: right" class="button" type="button" value="Go!"/>
+
+                        <div style="overflow: hidden; padding-right: 1.0em;">
+                            <input id="tutorial-Groups-Search" class="tutorialEnterKey" maxlength='50' name="name"
+                                   placeholder="Search for group by name or school." type="text"/>
+                        </div>
+                    </div>
+
+                    <div style="color: white;">…or if you want to create a group, start here.</div>
+                    <br>
+                    <input id="gotoCreateGroupUrl" class="button save-button" type="button" value="Create Group"/>
+                    <input style="display: none" id="finishTutorial" class="button save-button" type="button"
+                           value="Finish"/>
+                </div>
+            </div>
+
+            <!--bottom nav buttons-->
+            <div class="large-12 columns form-actions" style="margin-top: 10px">
+                <input id="nextTutorial" class="right button" type="button" value="Next"/>
+            </div>
+        </div>
+    </div>
+</script>

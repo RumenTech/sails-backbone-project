@@ -1,0 +1,41 @@
+<article>
+    <div class="original">
+        <div class="large-12 columns" style="padding-top:10px">
+            {{#if count}}
+            <div class="small-1 columns">
+                {{role}}
+            </div>
+            <div class="small-1 columns">
+                {{count}}
+            </div>
+            <div class="small-10 columns">
+
+            </div>
+            {{else}}
+            {{#if_eq role "admin"}}
+            {{else}}
+            <div class="small-1 columns">
+                {{ordinal}}
+            </div>
+            <div class="small-1 columns">
+                {{role}}
+            </div>
+            <div class="large-1 columns">
+                {{first_name}}
+            </div>
+            <div class="large-2 columns">
+                {{last_name}}
+            </div>
+            <div class="large-3 columns">
+                {{email}}
+            </div>
+            <div class="large-4 columns">
+                {{schoolname}}
+                <i class="icon-delete" id="{{id}}" title="Delete user" style="float: right"></i>
+            </div>
+            {{/if_eq}}
+            {{/if}}
+        </div>
+    </div>
+
+</article>

@@ -1,0 +1,61 @@
+<article>
+    <div class="original">
+        <div class="large-12 columns">
+            <div class="row">
+                {{#if first}}
+                <div id="div{{id}}" class="large-12 columns field" style="cursor: pointer;background-color: #00b3f0;">
+                    {{else}}
+                    <div id="div{{id}}" class="large-10 columns"  style="margin-left: -15px;">
+                        {{/if}}
+                        <h6>{{name}}</h6>
+                    </div>
+                    {{#if_eq role "admin"}}
+                    <div class="large-1 columns">
+                        {{#if first}}
+                        <i id="editEventdiv{{id}}" style="display: block; cursor:pointer;"  class='icon-edit tip-top' title='Edit'></i>
+                        {{else}}
+                        <i id="editEventdiv{{id}}" style="display: block; cursor:pointer;" class='icon-edit tip-top' title='Edit'></i>
+                        {{/if}}
+                    </div>
+                    {{/if_eq}}
+                    {{#if_eq role "moderator"}}
+                    <div class="large-1 columns">
+                        {{#if first}}
+                        <i id="editEventdiv{{id}}" style="display: block;"  class='icon-edit tip-top' title='Edit'></i>
+                        {{else}}
+                        <i id="editEventdiv{{id}}" style="display: block;" class='icon-edit tip-top' title='Edit'></i>
+                        {{/if}}
+                    </div>
+                    {{/if_eq}}
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="large-10 columns field">
+                    <span>{{date}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-10 columns field">
+                    <span>{{start}} - {{end}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-10 columns field" >
+                    <span>{{location}}</span>
+                </div>
+            </div>
+            <ul class='inline-list portfolio-social' style="border-bottom: 1px solid #c1bcba;">
+                <li>
+                    {{#if facebook_url}}
+                    <a href='{{facebook_url}}' target="_blank">
+                        <i class='icon-facebook'></i>
+                    </a>
+                    {{/if}}
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</article>

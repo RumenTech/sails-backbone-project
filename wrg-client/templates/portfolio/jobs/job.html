@@ -1,0 +1,28 @@
+<script id="preventrender757" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <div class="row">
+                <div id="viewJob" class="large-12 columns job">
+                    <div class="large-2 columns">
+                        {{#if company_image}}
+                        <img class="jobImage" style="cursor: pointer" src="{{company_image}}">
+                        {{else}}
+                        <img class="jobImage" src="//placehold.it/150x150">
+                        {{/if}}
+                    </div>
+                    <div class="large-10 large-offset-2">
+                        <div>
+                            <h5>{{job_title}}</h5>
+                        </div>
+                        <div>
+                            <label class="clientSubmittedBy">Submited by {{contact_name}}</label>
+                            <label class="clientPostedOn">Posted on {{postedOn}}</label>
+                        </div>
+                        <label>{{{job_description_short}}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</script>

@@ -1,0 +1,40 @@
+<div class='reveal-modal medium' id='profile-modal'>
+    <form id="saveAdministrator">
+        <div class='row'>
+            <div class='large-12 columns'>
+                <h2 class='thinheader' style='text-align: center'>Add Administrator</h2>
+                <h5 class='thinheader'>By adding administrator, you are actually relieving
+                    yourself of that duty. There can be only one administrator in group</h5>
+            </div>
+        </div>
+
+        <div class='row' id='mainContent'>
+            <div class='row'>
+                <div class='validation-messages large-12 columns'></div>
+            </div>
+            <div class='large-12 columns'>
+                <p class='chooseAdmin'>You have {{noOfModerators}} moderator(s). Choose one you want to promote, but choose wisely.</p>
+            </div>
+            <div class='large-12 columns'>
+                <div class='large-6 columns'>
+                    <ul id="currentModerators"></ul>
+                </div>
+                <div class='large-6 columns'>
+                     <div id='newAdminImage'></div>
+                </div>
+            </div>
+        </div>
+        <div class='row' id='userMessage' style='visibility:hidden'>
+
+        </div>
+
+        <div class='row'>
+            <div class='large-12 columns form-actions'>
+                <input id="next" type="submit" class='button next-button' value='Next'/>
+                <input id="save" type="submit" class='button save-button' value='Save' style='visibility:hidden'/>
+                <input id="close" type="submit" class='button close-button' value='Close' style='visibility:hidden'/>
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

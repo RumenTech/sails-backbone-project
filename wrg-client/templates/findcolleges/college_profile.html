@@ -1,0 +1,138 @@
+<script id="preventrender7" type="text/x-handlebars-template">
+<article>
+    <div class="original">
+        <div class="l-main">
+            <div class="row">
+                <div class="large-9 columns">
+                    <div class="large-12 columns">
+                        <div class="large-12 columns module">
+                            <div class="large-3 columns">
+                                {{#if profile_image}}
+                                <img class="readOnlyImage" src="{{profile_image}}">
+                                {{else}}
+                                <img class="readOnlyImage" src='//placehold.it/180x180'>
+                                {{/if}}
+                            </div>
+                            <div class="large-offset-3">
+                                <h3 class="thinheader">{{name}}</h3>
+                                <ul class="inline-list">
+                                    <li>
+                                        {{#if city}} {{#if state}}
+                                        <h6 class="thinheader">{{city}}, {{state}}</h6>
+                                        {{/if}} {{/if}}
+                                    </li>
+                                    <li>
+                                        {{#if company_size}}
+                                        <h6 class="thinheader wrg-gray">{{college_size}}</h6>
+                                        {{/if}}
+                                    </li>
+                                </ul>
+                                <div class="portfolio-extra">
+                                    {{#if tagline}}
+                                    <h5 class="thinheader"><strong>{{tagline}}</strong></h5>
+                                    {{/if}}
+                                    <ul class="inline-list">
+                                        {{#if college_website}}
+                                        <li>
+                                            <a class="special" href="{{college_website}}" target="_blank">{{college_website}}</a>
+                                        </li>
+                                        {{/if}}
+                                        {{#if facebook_url}}
+                                        <li>
+                                            <a href="{{facebook_url}}" target="_blank"><i class="icon-facebook"></i></a>
+                                        </li>
+                                        {{/if}}
+                                        {{#if twitter_url}}
+                                        <li>
+                                            <a href="{{twitter_url}}" target="_blank"><i class="icon-twitter"></i></a>
+                                        </li>
+                                        {{/if}}
+                                        {{#if linkedin_url}}
+                                        <li>
+                                            <a href="{{linkedin_url}}" target="_blank"><i class="icon-linkedin"></i></a>
+                                        </li>
+                                        {{/if}}
+                                        {{#if google_url}}
+                                        <li>
+                                            <a href="{{google_url}}" target="_blank"><i class="icon-google-plus"></i></a>
+                                        </li>
+                                        {{/if}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-12 columns">
+                        <div class="large-12 columns module" style="margin-top: 0% !important;">
+                            <h4 class="thinheader"><strong>About {{name}}</strong></h4>
+                            <h6 class="thinheader">{{description}}</h6>
+                        </div>
+                    </div>
+                    <div class="large-12 columns" style="float: left ! important;">
+                        <div class="large-12 columns module" style="margin-top: 0% !important;">
+                            <h4 class="thinheader"><strong>Related multi-media</strong></h4>
+                            {{#if media}}
+                            <div class="mediaExperienceRepresentation" style="width: auto ! important;">
+                                <ul>
+                                    {{#each media}}
+                                    {{#if media_url}}
+                                    {{#if id_video}}
+                                    <li>
+                                        <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}"
+                                                                                           title="{{video_caption}}"
+                                                                                           src="//img.youtube.com/vi/{{id_video}}/1.jpg"
+                                                                                           style="width: 78px; height: 78px;"></a>
+                                    </li>
+                                    {{else}}
+                                    <li>
+                                        <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}"
+                                                                                           title="{{photo_caption}}"
+                                                                                           src='{{media_url}}'
+                                                                                           style="width: 78px; height: 78px;"></a>
+                                    </li>
+                                    {{/if}}
+                                    {{/if}}
+                                    {{/each}}
+                                </ul>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                    <div class="large-12 columns">
+                        <div class="large-12 columns module" style="margin-top: 0% !important;">
+                            <h4 class="thinheader"><strong>Ideal Candidates</strong></h4>
+
+                            <div class="large-4 columns">
+                                {{#each candidates}}
+                                <div id="candidate-{{index}}" class="large-12 columns candidates" style="border-top: 1px solid #d9d6d5;">
+                                    <h6 class="thinheader"><strong>{{field}}</strong></h6>
+                                </div>
+                                {{/each}}
+                            </div>
+                            <div class="large-offset-4 large-8">
+                                <p id="descriptionTitle" style="font-weight: bold; height: 10px;"></p>
+                                <p id="descriptionText"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="large 3 large-offset-9 ">
+                    <div class="large-12 columns module">
+                        <h4 class="thinheader"><strong>Events</strong></h4>
+                        {{#each events}}
+                        <div class="large-12" style="margin-top: 20px; border-top: 1px solid #d9d6d5">
+                            <h6 class="thinheader"><strong>{{name}}</strong> @ {{location}}</h6>
+
+                            <p class="thinheader">Date: {{date}}</p>
+
+                            <p class="thinheader">Time: {{start}} - {{end}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>
+</script>

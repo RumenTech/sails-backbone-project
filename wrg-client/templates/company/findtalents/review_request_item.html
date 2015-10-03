@@ -1,0 +1,19 @@
+<article>
+    <div class="original">
+        <ul class='vcard user-card'>
+            <li class='user-photo'>
+                {{#if profile_image}}
+                <img src='{{profile_image}}' />
+                {{else}}
+                <img src='//placehold.it/180x180' />
+                {{/if}}
+                <div class='user-card-actions'><a class='accept-request'>Accept</a> <small>or</small> <a class='decline-request' >Decline</a></div>
+            </li>
+            <li>
+                <h5 class='thinheader'>{{first_name}} {{last_name}}</h5>
+                <h6 class='thinheader'>{{information}}</h6>
+            </li>
+        </ul>
+    </div>
+
+</article>

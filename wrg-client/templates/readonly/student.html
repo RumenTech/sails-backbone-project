@@ -1,0 +1,553 @@
+<article>
+    <div class="original">
+        <div class='l-main'>
+            <div class='row'>
+                <div class="large-9 columns">
+                    <div id="errorDiv" class='large-9 columns module' style="display: none">
+                        <h2>You are not allowed to see this profile</h2>
+                    </div>
+                    <div id="profileDiv" class='large-9 columns module'>
+
+                        <div class='row student-data'>
+                            <div class='large-3 columns'>
+                                {{#if profile_image}}
+                                <img src='{{profile_image}}' width="180px">
+                                {{else}}
+                                <img src='//placehold.it/180x180'>
+                                {{/if}}
+                            </div>
+                            <div class='large-9 columns'>
+                                <header>
+                                    <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                                    {{#if school}}
+                                    <h6 class='thinheader'>Studied {{major}} at {{school}}</h6>
+                                    {{/if}}
+                                </header>
+                                {{#if graduation_year}}
+                                <div class='portfolio-extra'>
+                                    <h5 class='thinheader'>Graduating in {{graduation_month}} {{graduation_year}} </h5>
+                                    <h5 class='thinheader'>{{tagline}}</h5>
+                                    <a class='special' href='{{personal_website}}'>{{personal_website}}</a>
+                                    <ul class='inline-list portfolio-social'>
+
+                                        <li>
+                                            {{#if twitter_url}}
+                                            <a href='{{twitter_url}}'>
+                                                <i class='icon-twitter'></i>
+                                            </a>
+                                            {{/if}}
+                                        </li>
+                                        <li>
+                                            {{#if facebook_url}}
+                                            <a href='{{facebook_url}}'>
+                                                <i class='icon-facebook'></i>
+                                            </a>
+                                            {{/if}}
+                                        </li>
+                                        <li>
+                                            {{#if linkedin_url}}
+                                            <a href='{{linkedin_url}}'>
+                                                <i class='icon-linkedin'></i>
+                                            </a>
+                                            {{/if}}
+                                        </li>
+                                        {{#if google_url}}
+                                        <li>
+                                            <a href='{{google_url}}'>
+                                                <i class='icon-google-plus'></i>
+                                            </a>
+                                        </li>
+                                        {{/if}}
+
+                                        {{#if gpa}}
+                                        <li>{{gpa}} gpa</li>
+                                        {{/if}}
+
+                                    </ul>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+
+                        <!-------------------------------------------------POINTS---------------------------------------------------------->
+                        <div class='row student-data'>
+                            <div class='large-12 columns'>
+                                <header class='module-header'>
+                                    <h4>
+                                        {{#if both}}
+                                        <span id="showXpPoints" style='cursor:pointer'>Experience Points</span>
+                                        <span id="showFutureSelf" style='cursor:pointer'> | Plan Your Future</span>
+                                        {{else}}
+                                        {{#if future}}
+                                        <span>Plan Your Future</span>
+                                        {{else}}
+                                        {{#if experiences}}
+                                        <span>Experience Points</span>
+                                        {{/if}}
+                                        {{/if}}
+                                        {{/if}}
+                                    </h4>
+                                </header>
+                                {{#if notExperience}} {{else}}
+                                {{#if experiences}}
+                                <div class='experience-container' id="experiencePoints">
+
+                                    <!-- <div id="imageHolder" style="display: block"></div>-->
+                                    <table class='experience-points'>
+                                        <tbody>
+                                        <tr>
+                                            <th><i class='experience-icon icon-intern-coop'  title="Internships you have completed" aria-hidden='true'></i>Internship/Co-op</th>
+                                            <td>
+                                                <div class='progress intern-coop'>
+                                                    <div id="1" class='meter' {{percent_0}}'></div>
+                                                <span class='meter-label'>{{number_0}}</span>
+                                </div>
+                                <div id=showDetails-1 class="hoverEmployer"> </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <th><i class='experience-icon icon-community-service' title="Civic - minded projects you've participated in or civic-minded organizations to which you belong." aria-hidden='true'></i>Community Service</th>
+                                    <td>
+                                        <div class='progress community-service'>
+                                            <div id="2" class='meter' {{percent_1}}'></div>
+                                        <span class='meter-label'>{{number_1}}</span>
+                            </div>
+                            <div id=showDetails-2 class="hoverEmployer"></div>
+                            </td>
+                            </tr>
+                            <tr>
+                                <th data-tooltip data-width='200'
+                                    title="For example, joining Toastmasters or your school's public speaking club"><i
+                                        class='experience-icon icon-public-speaking' aria-hidden='true'></i>Public Speaking
+                                </th>
+                                <td>
+                                    <div class='progress public-speaking'>
+                                        <div id="3" class='meter' {{percent_2}}'></div>
+                                    <span class='meter-label'>{{number_2}}</span>
+                        </div>
+                        <div id=showDetails-3 class="hoverEmployer"> </div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <th><i class='experience-icon icon-research' title="Research you have completed" aria-hidden='true'></i>Research</th>
+                            <td>
+                                <div class='progress research'>
+                                    <div id="4" class='meter' {{percent_3}}'></div>
+                                <span class='meter-label'>{{number_3}}</span>
+                    </div>
+                    <div id=showDetails-4 class="hoverEmployer"> </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th><i class='experience-icon icon-leadership' title="Officer roles within a club/organization/company" aria-hidden='true'></i>Leadership</th>
+                        <td>
+                            <div class='progress leadership'>
+                                <div id="5" class='meter' {{percent_4}}'></div>
+                            <span class='meter-label'>{{number_4}}</span>
+                </div>
+                <div id=showDetails-5 class="hoverEmployer"> </div>
+                </td>
+                </tr>
+                <tr>
+                    <th><i class='experience-icon icon-innovation' title="Having designed and built or implemented a new way of solving an meaningful problem." aria-hidden='true'></i>Innovation</th>
+                    <td>
+                        <div class='progress innovation'>
+                            <div id="6" class='meter' {{percent_5}}'></div>
+                        <span class='meter-label'>{{number_5}}</span>
+            </div>
+            <div id=showDetails-6 class="hoverEmployer"> </div>
+            </td>
+            </tr>
+            <tr>
+                <th><i class='experience-icon icon-industry-outreach' title="Taking the initiative to connect alumni / local professionals in your fields of
+                            interest and conduct an informational interview over coffee or over the phone." aria-hidden='true'></i>Industry Outreach</th>
+                <td>
+                    <div class='progress industry-outreach'>
+                        <div id="7" class='meter' {{percent_6}}'></div>
+                    <span class='meter-label'>{{number_6}}</span>
+        </div>
+        <div id=showDetails-7 class="hoverEmployer"> </div>
+        </td>
+        </tr>
+        <tr>
+            <th><i class='experience-icon icon-innovation'  title="Grit in psychology is a positive, non-cognitive trait based on an individual’s passion for a particular long-term
+                            goal or endstate coupled with a powerful motivation to achieve their respective objective." aria-hidden='true'></i>Grit</th>
+            <td>
+                <div class='progress grit'>
+                    <div id="8" class='meter' {{percent_7}}'></div>
+                <span class='meter-label'>{{number_7}}</span>
+    </div>
+    <div id=showDetails-8 class="hoverEmployer"> </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <div class='experience-grid'>
+        <div class='divider' style='left: 11%;'></div>
+        <div class='divider' style='left: 22%;'></div>
+        <div class='divider' style='left: 33%;'></div>
+        <div class='divider' style='left: 44%;'></div>
+        <div class='divider' style='left: 55%;'></div>
+        <div class='divider' style='left: 66%;'></div>
+        <div class='divider' style='left: 77%;'></div>
+        <div class='divider' style='left: 88%;'></div>
+    </div>
+    </div>
+    {{/if}}
+    {{/if}}
+    </div>
+    </div>
+
+
+    {{#if future_self}}
+    <!------------------------------------------- FUTURE SELF  ---------------------------------------------->
+    <div class='row student-data'>
+        <div id="futureSelf" style='display:none'>
+            <div style="font-size: 0.7em">(This feature helps you plan out what you would like to achieve over the next
+                six months. Drag the sliders and add notes on how you hope to fulfill goals! We'll check in after three
+                months and six month to see how you're doing. One point is equal to three months of ecperience.)
+            </div>
+            <div class='experience-container'>
+                <table class='experience-points'>
+                    <tbody>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="Internships you have completed">
+                            <i class='experience-icon icon-intern-coop' aria-hidden='true'></i>Internship/Co-op</th>
+                        <td>
+                            <div class='progress intern-coop-future' title="{{future_note_0}}">
+                                <div class='meter' style='width: {{future_percent_0}}'></div>
+                                <span class='meter-label'>{{future_number_0}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="Civic - minded projects you've participated in or civic-minded organizations to which you belong.">
+                            <i class='experience-icon icon-community-service' aria-hidden='true'></i>Community Service</th>
+                        <td>
+                            <div class='progress community-service-future' title="{{future_note_1}}">
+                                <div class='meter' style='width: {{future_percent_1}}'></div>
+                                <span class='meter-label'>{{future_number_1}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="For example, joining Toastmasters or your school's public speaking club"><i
+                                class='experience-icon icon-public-speaking' aria-hidden='true'></i>Public Speaking
+                        </th>
+                        <td>
+                            <div class='progress public-speaking-future' title="{{future_note_2}}">
+                                <div class='meter' style='width: {{future_percent_2}}'></div>
+                                <span class='meter-label'>{{future_number_2}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="Research you have completed">
+                            <i class='experience-icon icon-research' aria-hidden='true'></i>Research</th>
+                        <td>
+                            <div class='progress research-future' title="{{future_note_3}}">
+                                <div class='meter' style='width: {{future_percent_3}}'></div>
+                                <span class='meter-label'>{{future_number_3}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="Officer roles within a club/organization/company">
+                            <i class='experience-icon icon-leadership' aria-hidden='true'></i>Leadership</th>
+                        <td>
+                            <div class='progress leadership-future' title="{{future_note_4}}">
+                                <div class='meter' style='width: {{future_percent_4}}'></div>
+                                <span class='meter-label'>{{future_number_4}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="Having designed and built or implemented a new way of solving an meaningful problem.">
+                            <i class='experience-icon icon-innovation' aria-hidden='true'></i>Innovation</th>
+                        <td>
+                            <div class='progress innovation-future' title="{{future_note_5}}">
+                                <div class='meter' style='width: {{future_percent_5}}'></div>
+                                <span class='meter-label'>{{future_number_5}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="Taking the initiative to connect alumni / local professionals in your fields of
+                                interest and conduct an informational interview over coffee or over the phone.">
+                            <i class='experience-icon icon-industry-outreach' aria-hidden='true'></i>Industry Outreach</th>
+                        <td>
+                            <div class='progress industry-outreach-future' title="{{future_note_6}}">
+                                <div class='meter' style='width: {{future_percent_6}}'></div>
+                                <span class='meter-label'>{{future_number_6}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip data-width='200'
+                            title="Grit in psychology is a positive, non-cognitive trait based on an individual’s passion for a particular long-term
+                            goal or endstate coupled with a powerful motivation to achieve their respective objective.">
+                            <i class='experience-icon icon-innovation' aria-hidden='true'></i>Grit</th>
+                        <td>
+                            <div class='progress innovation-future' title="{{future_note_7}}">
+                                <div class='meter' style='width: {{future_percent_7}}'></div>
+                                <span class='meter-label'>{{future_number_7}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class='experience-grid'>
+                    <div class='divider' style='left: 11%;'></div>
+                    <div class='divider' style='left: 22%;'></div>
+                    <div class='divider' style='left: 33%;'></div>
+                    <div class='divider' style='left: 44%;'></div>
+                    <div class='divider' style='left: 55%;'></div>
+                    <div class='divider' style='left: 66%;'></div>
+                    <div class='divider' style='left: 77%;'></div>
+                    <div class='divider' style='left: 88%;'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <!------------------------------------------------------------------------------------------>
+    <div id="portfolioInfoDiv" class='row student-data'>
+        <div class='large-12 columns'>
+            <h4>
+                <span>Portfolio information</span>
+            </h4>
+
+            {{#if high_school}}
+            <h6 class='thinheader'>Went to</h6>
+
+            <p> {{high_school}}</p>
+            {{/if}}
+
+            {{#if company}}
+            <h6 class='thinheader'>Company</h6>
+
+            <p>{{company}}</p>
+            {{/if}}
+
+            {{#if job_title}}
+            <h6 class='thinheader'>Job Title</h6>
+
+            <p>{{job_title}}</p>
+            {{/if}}
+        </div>
+    </div>
+
+    {{#if notExperience}}
+    {{else}}
+    {{#if experiences}}
+    <div id="experienceDiv" class='row student-data'>
+        <div class='large-12 columns'>
+            <h4>
+                <span>Experiences</span>
+            </h4>
+            {{#if experiences}}
+            {{#each experiences}}
+            <h5><strong>{{title}}</strong>, {{organization}} ({{start}} - {{end}})</h5>
+            <p>{{description}}</p>
+            {{#if categories}}
+
+            <div style="display: inline; font-size: 25px">
+                {{#each categories}}
+
+                {{#if_eq category_id "1"}}
+                <span class="experience-icon icon-intern-coop"  title="Internships you have completed"> </span>
+                {{/if_eq}}
+
+                {{#if_eq category_id "2"}}
+                <span class="experience-icon icon-community-service" title="Civic - minded projects you've participated in or civic-minded organizations to which you belong."> </span>
+                {{/if_eq}}
+
+                {{#if_eq category_id "3"}}
+                <span class="experience-icon icon-public-speaking" title="For example, joining Toastmasters or your school's public speaking club"> </span>
+                {{/if_eq}}
+
+                {{#if_eq category_id "4"}}
+                <span class="experience-icon icon-research" title="Research you have completed"> </span>
+                {{/if_eq}}
+
+                {{#if_eq category_id "5"}}
+                <span class="experience-icon icon-leadership" title="Officer roles within a club/organization/company"> </span>
+                {{/if_eq}}
+
+                {{#if_eq category_id "6"}}
+                <span class="experience-icon icon-innovation" title="Having designed and built or implemented a new way of solving an meaningful problem."> </span>
+                {{/if_eq}}
+
+                {{#if_eq category_id "7"}}
+            <span class="experience-icon icon-industry-outreach"  title="Taking the initiative to connect alumni / local professionals in your fields of
+                            interest and conduct an informational interview over coffee or over the phone." > </span>
+                {{/if_eq}}
+
+                {{#if_eq category_id "8"}}
+            <span class="experience-icon icon-innovation" title="Grit in psychology is a positive, non-cognitive trait based on an individual’s passion for a particular long-term
+                            goal or endstate coupled with a powerful motivation to achieve their respective objective."> </span>
+                {{/if_eq}}
+
+
+                {{/each}}
+
+            </div>
+            {{/if}}
+            {{#if media}}
+            <div class="mediaExperienceRepresentation">
+                <ul style=''>
+                    {{#each media}}
+                    {{#if data}}
+                    {{#if id_video}}
+                    <li>
+                        <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}" title="{{name}}"
+                                                                           src="//img.youtube.com/vi/{{id_video}}/1.jpg"
+                                                                           style="width: 78px; height: 78px;"></a>
+                    </li>
+                    {{else}}
+                    <li>
+                        <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}" title="{{name}}" src='{{data}}'
+                                                                           style="width: 78px; height: 78px;"></a>
+                    </li>
+                    {{/if}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+            {{/if}}
+            {{/each}}
+            {{/if}}
+        </div>
+    </div>
+    {{/if}}
+    {{/if}}
+
+    <div id="skillsDiv" class='row student-data'>
+        <div class='large-12 columns'>
+            <h4>
+                <span>Skills</span>
+            </h4>
+
+            <div class='skills'>
+                {{#if skills}}
+                {{#each skills}}
+                <dl class='skill-{{proficiency_level}}'>
+                    <dt>{{name}}</dt>
+                    <dd>{{proficiency_level}}</dd>
+                </dl>
+                {{/each}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+
+    <div id="awardsDiv" class='row student-data'>
+        <div class='large-12 columns'>
+            <header class='module-header'>
+                <h4>
+                    <span>Awards</span>
+                </h4>
+            </header>
+            {{#if awards}}
+            <ul class='portfolio-list award-list'>
+                {{#each awards}}
+                <h5>{{title}}</h5>
+
+                <p>Presented by {{presentor}}</p>
+
+                <p style='border-bottom:thin solid #6d6d6d; '>{{description}}</p>
+                {{/each}}
+            </ul>
+            {{/if}}
+        </div>
+    </div>
+
+    {{#if video_url}}
+    <div id="personalStatementDiv" class='row student-data'>
+        <div class='large-12 columns'>
+            <header class='module-header'>
+                <h4>
+                    <span>Personal Statement Video</span>
+                </h4>
+            </header>
+
+            <div class="row">
+                <div class='large-12 columns'>
+                    <p>{{{personal_statement}}}</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div id="videoContainer" class='large-12 columns'>
+                    <p>
+                        <iframe class="youtube-player" type="text/html" width="640" height="385"
+                                src="//www.youtube.com/embed/{{id_video}}" allowfullscreen frameborder="0">
+                        </iframe>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{/if}}
+
+    {{#if connections}}
+    <div id="connectionsDiv" class="row student-data">
+        <div class="large-12 columns">
+            <header class="module-header">
+                <h4>
+                    <span>Connections</span>
+                </h4>
+            </header>
+            <ul class="connections large-block-grid-2">
+                {{#each connections}}
+                <li>
+                    <div class="connection" userId="{{request_user_id}}" userRole="{{role}}">
+                        <div class='connection-photo'>
+                            {{#if profile_image}}
+                            <img src='{{profile_image}}'  class='small-connections' />
+                            {{else}}
+                            <img src='//placehold.it/200x200' />
+                            {{/if}}
+                        </div>
+                        <div class='connection-info'>
+                            <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                            <h6 class='thinheader'>{{reducedInformation}}</h6>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/if}}
+
+    {{#if viewer}}
+    <div class='row'>
+        <div class='large-12 columns' style='margin-left: 20px'>
+            <input id="sendFriendRequest" class='button send-button' type='button' value='Send Friend Request'/>
+        </div>
+    </div>
+    {{/if}}
+    <div id="dialog-message" title="Viewing media experience"></div>
+    <div id='footer-section'></div>
+    </div>
+    </div>
+    <div id='sponsors-section' class='large-3 large-offset-9'></div>
+    </div>
+    </div>
+
+    </div>
+</article>
+
+
+

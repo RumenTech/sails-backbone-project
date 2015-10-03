@@ -1,0 +1,38 @@
+<article>
+    <div class="original">
+        <a id="mentorLink">
+            {{#if_eq is_seen true}}
+            <div class='dashSeen'>
+                <div class='connection' style='background-color: #EFEFEF'>
+                    <div class='connection-photo' style='cursor: pointer'>
+                        {{#if profile_image}}
+                        <img class='small-companies' src='{{profile_image}}'/>
+                        {{else}}
+                        <img src='//placehold.it/200x200'/>
+                        {{/if}}
+                    </div>
+                    <div class='connection-info' style='cursor: pointer'>
+                        <h4 class='thinheader'>{{first_name}} {{last_name}}</h4>
+                    </div>
+                </div>
+            </div>
+            {{else}}
+            <div class='dashSeen'>
+                <div class='connection' style='background-color: #d3d3d3; border: 1px solid'>
+                    <div class='connection-photo' style='cursor: pointer'>
+                        {{#if profile_image}}
+                        <img class='small-companies' src='{{profile_image}}'/>
+                        {{else}}
+                        <img src='//placehold.it/200x200'/>
+                        {{/if}}
+                    </div>
+                    <div class='connection-info' style='cursor: pointer'>
+                        <h4 class='thinheader'>{{first_name}} {{last_name}}</h4>
+                    </div>
+                </div>
+            </div>
+            {{/if_eq}}
+        </a>
+    </div>
+
+</article>

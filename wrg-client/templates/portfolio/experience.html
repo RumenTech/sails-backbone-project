@@ -1,0 +1,56 @@
+<script id="preventrender4" type="text/x-handlebars-template">
+    <article>
+        <div class='large-9 columns'>
+            <h5 class='thinheader'><strong>{{title}}</strong>, {{organization}}</h5>
+
+            <div><em>{{startMonthString}} {{start_year}} - {{endMonthString}} {{end_year}}</em></div>
+        </div>
+        <div class='experience-badges large-3 columns right'>
+            {{#each categories}}
+            <i class='{{category_class}}' data-tooltip title='{{category_title}}'></i>
+            {{/each}}
+            <a>
+                {{#if_eq reference_email "reference@email.com"}}
+                <i style="font-size:30px; color: red" class='icon-edit tip-top' title='Edit'></i>
+                {{else}}
+                <i class='icon-edit tip-top' title='Edit'></i>
+                {{/if_eq}}
+            </a>
+            <a>
+                <i class='icon-delete tip-top' title='Delete'></i>
+            </a>
+        </div>
+        <div class='large-12 columns'>
+            <div>{{description}}</div>
+            {{#if_eq reference_email "reference@email.com"}}
+            <h6 style="color: red" class='connection-info'>LINKEDIN IMPORT. Please complete. <span
+                    class="verifier"></span></h6>
+            {{else}}
+            <h6 class='subheader'>Waiting verification by <span
+                    class="verifier">{{reference_name}}, {{reference_title}}</span></h6>
+            {{/if_eq}}
+            {{#if media}}
+            <div class="mediaExperienceRepresentation">
+                <ul>
+                    {{#each media}}
+                    {{#if data}}
+                    {{#if id_video}}
+                    <li>
+                        <a class='project-view'><img id="media-{{id}}" title="{{name}}"
+                                                     src="//img.youtube.com/vi/{{id_video}}/1.jpg"
+                                                     style="width: 78px; height: 78px;"></a>
+                    </li>
+                    {{else}}
+                    <li>
+                        <a class='project-view'><img id="media-{{id}}" title="{{name}}" class="imageHover"
+                                                     src='{{data}}' style="width: 78px; height: 78px;"></a>
+                    </li>
+                    {{/if}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+            {{/if}}
+        </div>
+    </article>
+</script>

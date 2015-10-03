@@ -1,0 +1,32 @@
+<article>
+    <div class="original">
+        <div class='comment-container'>
+            <div class='large-12 columns' style='border-bottom: 2px solid;  border-color: darkgrey; padding-top: 10px'>
+                <div class='large-2 columns'>
+                    {{#if  profileImage}}
+                    <img class='resourceCommentImage' title='{{userName}}' src="{{profileImage}}"/> </img>
+                    {{else}}
+                    <img class='resourceCommentImage' title='{{userName}}' src='//placehold.it/80x80'/> </img>
+                    {{/if}}
+                </div>
+                <div class='large-8 columns'>
+                <textarea style="background-color: lightgrey; color: black; resize: none;" id="comment-content-{{id}}" type="text"
+                          readonly>{{content}}</textarea>
+                    <a style='display:none; font-size: 12px' id='save-{{id}}' class='save-comment right'>Save</a>
+                </div>
+                <div class='large-2 columns'>
+                    {{#if allowDelete}}
+                    <a id='remove-comment'><i class='glyphicon glyphicon-remove right'title='Remove' style="cursor: pointer;  margin-left: 5px"></i> </a>
+                    {{/if}}
+                    {{#if editable}}
+                    <a id='edit-comment'><i class='glyphicon glyphicon-edit right'title='Edit' style="cursor: pointer;"></i></a>
+                    {{/if}}
+                    {{#if_eq role "admin"}}
+                    <a id='remove-comment'><i class='glyphicon glyphicon-remove right'title='Remove' style="cursor: pointer;  margin-left: 5px"></i> </a>
+                    {{/if_eq}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</article>

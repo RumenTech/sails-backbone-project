@@ -1,0 +1,106 @@
+<article>
+    <div class="original">
+        <div class='l-main'>
+            <div class='row'>
+                <div class="large-10 columns">
+                    <div class="large-10 columns module">
+                        <div class="large-3 columns">
+                            {{#if company_image}}
+                            <img style="width: 180px; height: 180px" src="{{company_image}}">
+                            {{else}}
+                            <img style="width: 180px; height: 180px" src="//placehold.it/80x80">
+                            {{/if}}
+                        </div>
+                        <div class="large-7 large-offset-3">
+                            <h2 class="thinheader">{{company_name}}</h2>
+                            <ul class="inline-list">
+                                {{#if company_city}} {{#if company_state}}
+                                <li>
+                                    <h6 class="thinheader">{{company_city}},{{company_state}}</h6>
+                                </li>
+                                {{/if}} {{/if}}
+                                {{#if company_size}}
+                                <li style="margin-left: 15%">
+                                    <h6 class="thinheader">{{company_size}} employees</h6>
+                                </li>
+                                {{/if}}
+                            </ul>
+                            <div class="portfolio-extra">
+                                <h5 class="thinheader">{{company_tagline}}</h5>
+                                <ul class="inline-list portfolio-social">
+                                    {{#if company_web}}
+                                    <li>
+                                        <a class="special" href="{{company_web}}" target="_blank">{{company_web}}</a>
+                                    </li>
+                                    {{/if}}
+                                    {{#if company_fb}}
+                                    <li>
+                                        <a href="{{company_fb}}" target="_blank">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    {{/if}}
+                                    {{#if company_tw}}
+                                    <li>
+                                        <a href="{{company_tw}}" target="_blank">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                    {{/if}}
+                                    {{#if company_gplus}}
+                                    <li>
+                                        <a href="{{company_gplus}}" target="_blank">
+                                            <i class="icon-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    {{/if}}
+                                    {{#if company_linkedin}}
+                                    <li>
+                                        <a href="{{company_linkedin}}" target="_blank">
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    {{/if}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="large-10 columns module">
+                            <h3 class="thinheader">{{job_title}}</h3>
+                            <h4 class="thinheader">{{location}}</h4>
+                            <p>{{{job_description}}}  </p>
+                            <h4 style="margin-top: 20px" class="thinheader">Desired Skills</h4>
+                            <label style="margin-top: 10px">{{{expected_deliverable}}}</label>
+                            {{#if applied}}
+                            <h4><span style="float: right; margin-top: 20px; display: block; color:green">{{applied}}</span></h4>
+                            {{else}}
+
+                            <input style="float: right; margin-top: 20px; display: block" class="button" type='button' value="Apply Now"
+                                   data-tooltip="Apply on company website" id='button-apply'>
+                            <!--<input id="facebookshare" value="Facebook Share" class="button" type='button'>-->
+                            {{/if}}
+                            {{#if apply_link}}
+
+                            <div id="application-link" style="display: none">
+                                <hr>
+                                <a href="{{apply_link}}" title="Opens a new window and navigates to employer website" target="_blank">External Application Link!</a>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                <div class="large-10 columns">
+                    <div id='applicants-section'></div>
+                </div>
+                <div class="large-10 columns">
+                    <a id="backToJobs">
+                        <h5><span class="glyphicon glyphicon-arrow-left"></span> Back to Job Posts</h5>
+                    </a>
+                </div>
+
+                <div id='sponsors-section' class='large-2 large-offset-10'></div>
+
+            </div>
+        </div>
+    </div>
+
+</article>

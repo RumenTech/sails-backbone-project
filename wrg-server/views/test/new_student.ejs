@@ -1,0 +1,155 @@
+<script src="/js/jquery.js"></script>
+<script src="/js/my_student.js"></script>
+<script src="/js/new_student.js"></script>
+
+
+
+<h2>Unit Testing</h2>
+<input type="button" value="Start Unit Test" id="start">
+
+<section id="fail">
+
+<h2>Problem 1: Try create a new student  user (Validate User Fail)</h2>
+
+<h4>URL via POST</h4>
+<div id="fail_url"></div>
+
+<h4>Data Sent</h4>
+<div id="fail_sent"></div>
+
+<h4>Data Received</h4>
+<div id="fail_received"></div>
+
+</section>
+
+
+<section id="fail2">
+
+<h2>Problem 2: Try create a new student  user (Validate Student Fail)</h2>
+
+<h4>URL via POST</h4>
+<div id="fail_url_2"></div>
+
+<h4>Data Sent</h4>
+<div id="fail_sent_2"></div>
+
+<h4>Data Received</h4>
+<div id="fail_received_2"></div>
+
+</section>
+
+<section id="ok">
+
+<h2>Try create a new student user</h2>
+
+<h4>URL via POST</h4>
+<div id="ok_url"></div>
+
+<h4>Data Sent</h4>
+<div id="ok_sent"></div>
+
+<h4>Data Received</h4>
+<div id="ok_received"></div>
+
+</section>
+
+<section id="repeat">
+<h2>Problem 3: Repeat try recreate a new student user</h2>
+
+<h4>URL via POST</h4>
+<div id="ok_url_2"></div>
+
+<h4>Data Sent</h4>
+<div id="ok_sent_2"></div>
+
+<h4>Data Received</h4>
+<div id="ok_received_2"></div>
+
+</section>
+
+<hr/>
+
+<section id="fail">
+
+<h2>Try access to my student maybe without login</h2>
+
+<h4>URL</h4>
+<div id="access_denied_url"></div>
+
+<h4>VIA</h4>
+<div id="access_denied_method"></div>
+
+<h4>Data Sent</h4>
+<div id="fail_sent">None</div>
+
+<h4>Data Received</h4>
+<div id="access_denied_received"></div>
+
+</section>
+
+
+<section id="login">
+
+<h2>Login to access</h2>
+
+<h4>URL</h4>
+<div id="login_url"></div>
+
+<h4>Method</h4>
+<div id="login_method"></div>
+
+<h4>Data Sent</h4>
+<div id="login_sent"></div>
+
+<h4>Data Received</h4>
+<div id="login_received"></div>
+
+</section>
+
+<section id="login">
+
+<h2>If login is successful I can see the student of the session without send some parameter</h2>
+
+<h4>URL</h4>
+<div id="me_url"></div>
+
+<h4>Method</h4>
+<div id="me_method"></div>
+
+<h4>Data Sent</h4>
+<div id="me_sent"></div>
+
+<h4>Data Received</h4>
+<div id="me_received"></div>
+
+</section>
+
+<hr/>
+
+<section id="delete">
+<h2>How Delete an Userr</h2>
+
+<h4>URL via DELETE</h4>
+<div id="delete_ur"></div>
+
+<h4>Data Sent</h4>
+<div id="delete_sent"></div>
+
+<h4>Data Received</h4>
+<div id="delete_received"></div>
+
+</section>
+
+
+<script>
+
+$(function() {
+  // Handler for .ready() called.
+
+    $('#start').click(function(){
+        create_failed();
+    })
+
+});
+
+</script>

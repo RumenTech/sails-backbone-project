@@ -1,0 +1,31 @@
+$buffer-md: 2em;
+
+.buffer-bottom {
+  margin-bottom: $buffer-md;
+}
+
+.buffer-top {
+  margin-bottom: $buffer-md;
+}
+
+.buffer-left {
+  margin-left: $buffer-md;
+}
+
+.buffer-right {
+  margin-right: $buffer-md;
+}
+
+.btn-width-lg {
+  min-width: 186px;
+  max-width: 186px;
+}
+
+.btn-width-md {
+  min-width: 144px;
+  max-width: 144px;
+}
+
+.width-auto {
+  width: auto;
+}

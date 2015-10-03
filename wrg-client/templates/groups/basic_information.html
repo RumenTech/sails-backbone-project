@@ -1,0 +1,57 @@
+<article>
+    <div class="original">
+        <div class='large-9 small-8 columns'>
+            <header>
+                <h2 class='thinheader'>{{name}}</h2>
+                <p><div>{{{description}}}</div></p>
+            </header>
+            {{#if role}}
+            <div class='module-corner-actions'>
+                <a>
+                    <i class='icon-edit tip-top' id='editBasicInformation' title='Edit'></i>
+                </a>
+            </div>
+            {{/if}}
+            <div class='portfolio-extra'>
+
+                <ul class='inline-list portfolio-social'>
+                    {{#if websiteUrl}}
+                    <li>
+                        <a class='special' href='{{websiteUrl}}' target="_blank">{{websiteUrl}}</a>
+                    </li>
+
+                    {{/if}}
+                    {{#if twitterUrl}}
+                    <li>
+                        <a href='{{twitterUrl}}' target="_blank">
+                            <i class='icon-twitter'></i>
+                        </a>
+                    </li>
+                    {{/if}}
+                    {{#if facebookUrl}}
+                    <li>
+                        <a href='{{facebookUrl}}' target="_blank">
+                            <i class='icon-facebook'></i>
+                        </a>
+                    </li>
+                    {{/if}}
+                    {{#if linkedinUrl}}
+                    <li>
+                        <a href='{{linkedinUrl}}' target="_blank">
+                            <i class='icon-linkedin'></i>
+                        </a>
+                    </li>
+                    {{/if}}
+                    {{#if googleUrl}}
+                    <li>
+                        <a href='{{googleUrl}}' target="_blank">
+                            <i class='icon-google-plus'></i>
+                        </a>
+                    </li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</article>

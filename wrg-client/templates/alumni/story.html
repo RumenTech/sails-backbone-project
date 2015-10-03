@@ -1,0 +1,46 @@
+<script id="preventrender757" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <div class='portfolio-intro'>
+                <div class='row'>
+                    <div class='large-3 columns'>
+                        {{#if profile_image}}
+                        <img src='{{profile_image}}' width="180px">
+                        {{else}}
+                        <img src='//placehold.it/180x180'>
+                        {{/if}}
+                    </div>
+                    <div class='large-9 columns'>
+                        <header>
+                            <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                            <h6 class='thinheader'>Studied {{major}}</h6>
+                        </header>
+                        <div class='portfolio-extra'>
+                            <h5 class='thinheader'>{{job_title}}, {{company}}</h5>
+                            <ul class='inline-list portfolio-social'>
+                                <li>
+                                    <a class='special' href='#'>{{personal_url}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row alumni-story'>
+                <div class='large-12 columns'>
+                    <h6 class='specialheader'>What are your typical day-to-day-activities in your career?</h6>
+
+                    <p>{{activities}}</p>
+                    <h6 class='specialheader'>What process did you go through to enter your position and what
+                        experiences or skills made you stand out versus other applicants?</h6>
+
+                    <p>{{advice}}</p>
+                    <h6 class='specialheader'>When I was a student, I wish I had known ...</h6>
+
+                    <p>{{hindsight}}</p>
+                </div>
+            </div>
+            <a class='close-reveal-modal close-modal'>×</a>
+        </div>
+    </article>
+</script>

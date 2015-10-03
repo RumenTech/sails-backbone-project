@@ -1,0 +1,494 @@
+<article>
+    <div class="original">
+        <div class='l-main'>
+            <div class="row">
+                <section class='large-9 columns'>
+                    <header>
+                        <h3 class="header">
+                            <span>Settings</span>
+                        </h3>
+                    </header>
+                    <div class='module'>
+                        <div class="large-12 columns">
+                            <header>
+                                <h4 class='module-header'>
+                                    <span>Student</span>
+                                </h4>
+                            </header>
+                        </div>
+                        <div class="large-10 columns">
+                        <span class="large-4 columns">
+                            <h5 class="thinheader">First name</h5>
+                        </span>
+                        <span class="large-8 columns">
+                            <span id="spanstudent-first-name"><strong>{{first_name}}</strong></span>
+                            <input type="text" id="inputstudent-first-name" value="{{first_name}}" style="display: none"
+                                   class="large-9">
+                        </span>
+                        </div>
+                        <div class="large-2 columns">
+                            <a>
+                                <i class="icon-edit" id="editstudent-first-name" title="Edit"></i>
+                            </a>
+                            <input class='button save-button large-12' id="savestudent-first-name" value='Done'
+                                   style="display: none"/>
+                        </div>
+
+                        <div class="large-10 columns">
+                        <span class="large-4 columns">
+                            <h5 class="thinheader">Last name</h5>
+                        </span>
+                        <span class="large-8 columns">
+                            <span id="spanstudent-last-name"><strong>{{last_name}}</strong></span>
+                            <input type="text" id="inputstudent-last-name" value="{{last_name}}" style="display: none"
+                                   class="large-9">
+                        </span>
+                        </div>
+                        <div class="large-2 columns">
+                            <a>
+                                <i class="icon-edit" id="editstudent-last-name" title="Edit"></i>
+                            </a>
+                            <input class='button save-button large-12' id="savestudent-last-name" value='Done'
+                                   style="display: none"/>
+                        </div>
+
+                        <div class="large-10 columns">
+                        <span class="large-4 columns">
+                            <h5 class="thinheader">Email</h5>
+                        </span>
+                        <span class="large-8 columns">
+                            <span id="spanstudent-email"><strong>{{email}}</strong></span>
+                            <input type="text" id="inputstudent-email" value="{{email}}" style="display: none"
+                                   class="large-9">
+                        </span>
+                        </div>
+                        <div class="large-2 columns">
+                            <input class='button save-button large-12' id="savestudent-email" value='Done'
+                                   style="display: none"/>
+                        </div>
+
+                        <span class="large-12 columns"><span class="large-12 columns settings-list"></span></span>
+                        <div class="large-12 columns">
+                            <input class='button change-password-button' type='button' value='Change password'/>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------  PRIVACY ----------------------------------- -->
+                    <div id="privacy-settings" class="large-12 columns module">
+                        <div class='row'>
+                            <div class='save-message large-12 columns'></div>
+                        </div>
+                        <h4 class='module-header'>
+                            <span>Privacy</span>
+                        </h4>
+
+                        <div class='top-privacy' style='padding-top: 20px'>
+                            <div class="large-6 columns">
+                                <label style="font-size: 15px; font-weight: bold">Visibility of</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <label style="text-align: center; font-size: 15px; font-weight: bold">Visibility to Connections</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <label style="text-align: center; font-size: 15px; font-weight: bold">Visibility to Employers</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <label style="text-align: center; font-size: 15px; font-weight: bold">Visibility to Public</label>
+                            </div>
+                        </div>
+                        {{#if IE8}}
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>GPA</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="s1" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="e1" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch"id="p1" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>WRG Experience Points</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="s2" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="e2" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="p2" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Future Self</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="s3" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="e3" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="p3" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Skills </label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="s4" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="e4" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="p4" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Awards</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="s5" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="e5" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="p5" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Pesonal Statement Video</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="s6" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="e6" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="p6" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+
+                            <div class="large-6 columns">
+                                <label>Connections</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="s7" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="e7" >
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="p7" >
+                                </div>
+                            </div>
+                        </div>
+                        {{else}}
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>GPA</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="s1" checked>
+                                    <label class="onoffswitch-label" for="s1">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="e1" checked>
+                                    <label class="onoffswitch-label" for="e1">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="p1" checked>
+                                    <label class="onoffswitch-label" for="p1">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>WRG Experience Points</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="s2" checked>
+                                    <label class="onoffswitch-label" for="s2">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="e2" checked>
+                                    <label class="onoffswitch-label" for="e2">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="p2" checked>
+                                    <label class="onoffswitch-label" for="p2">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Future Self</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="s3" checked>
+                                    <label class="onoffswitch-label" for="s3">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="e3" checked>
+                                    <label class="onoffswitch-label" for="e3">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="p3" checked>
+                                    <label class="onoffswitch-label" for="p3">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Skills </label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="s4" checked>
+                                    <label class="onoffswitch-label" for="s4">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="e4" checked>
+                                    <label class="onoffswitch-label" for="e4">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="p4" checked>
+                                    <label class="onoffswitch-label" for="p4">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Awards</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="s5" checked>
+                                    <label class="onoffswitch-label" for="s5">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="e5" checked>
+                                    <label class="onoffswitch-label" for="e5">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="p5" checked>
+                                    <label class="onoffswitch-label" for="p5">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+                            <div class="large-6 columns">
+                                <label>Pesonal Statement Video</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="s6" checked>
+                                    <label class="onoffswitch-label" for="s6">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="e6" checked>
+                                    <label class="onoffswitch-label" for="e6">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="p6" checked>
+                                    <label class="onoffswitch-label" for="p6">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='privacy-class'>
+
+                            <div class="large-6 columns">
+                                <label>Connections</label>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="s7" checked>
+                                    <label class="onoffswitch-label" for="s7">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="e7" checked>
+                                    <label class="onoffswitch-label" for="e7">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="large-2 columns">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="p7" checked>
+                                    <label class="onoffswitch-label" for="p7">
+                                        <div class="onoffswitch-inner"></div>
+                                        <div class="onoffswitch-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        {{/if}}
+                        <div class='large-12 columns form-actions'>
+                            <input class='button save-button' type='button' value='Save changes'/>
+                        </div>
+                    </div>
+
+
+                    <div id="group-section" class='module'>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id='footer-section'></div>
+    </div>
+
+</article>

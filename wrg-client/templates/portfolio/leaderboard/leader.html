@@ -1,0 +1,201 @@
+<script id="preventrender7" type="text/x-handlebars-template">
+<article>
+    <div class="original">
+        <div class="large-12 columns job">
+            <div class="large-3 columns">
+                <ul class="inline inline-list" style="margin: 0px; margin-left: -50px">
+                    <li style="width: 25px"><label style="font-size: 20px; padding-top: 15px">{{index}}</label></li>
+                    <li style="margin-left: 15px">
+                        {{#if profile_image}}
+                        <img  style="float: left; margin-left: 3px" class='leaderBoardImage' src="{{profile_image}}">
+                        {{else}}
+                        <img style="float: left; margin-left: 3px" class='leaderBoardImage' src="//placehold.it/80x80">
+                        {{/if}}
+                    </li>
+
+                    <li style="margin-left: 5px; margin-right: 5px; padding-top: 20px; width: 110px"><label>{{first_name}} {{last_name}}</label></li>
+
+                </ul>
+            </div>
+
+            <div class="large-10 large-offset-2">
+                <div class='large-1 columns leaderboard'>
+                    <div class='large-1 columns'>
+                        {{#if internship}}
+                        {{internship}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns'>
+                        <input class='button  leaderboard-vote-button' id="1"  type='button'  value='Vote!' />
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #0076a3">
+                                {{#if internship_votes}}
+                                {{internship_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='large-1 columns leaderboard'>
+                    <div class='large-1 columns'>
+                        {{#if community}}
+                        {{community}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns' >
+                        <input class='button  leaderboard-vote-button' id="2" type='button'  value='Vote!' />
+
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #d41a62">
+                                {{#if community_votes}}
+                                {{community_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='large-1 columns leaderboard'>
+                    <div class='large-1 columns'>
+                        {{#if public}}
+                        {{public}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns' >
+                        <input class='button  leaderboard-vote-button'  id = "3" type='button'  value='Vote!' />
+
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #f1a01e">
+                                {{#if public_votes}}
+                                {{public_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='large-1 columns leaderboard'>
+                    <div class='large-1 columns'>
+                        {{#if research}}
+                        {{research}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns' >
+                        <input class='button  leaderboard-vote-button' id="4" type='button'  value='Vote!' />
+
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #d6df23">
+                                {{#if research_votes}}
+                                {{research_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='large-1 columns leaderboard'>
+                    <div class='large-1 columns'>
+                        {{#if leadership}}
+                        {{leadership}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns' >
+                        <input class='button  leaderboard-vote-button' id="5"  type='button'  value='Vote!' />
+
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #59cbf5">
+                                {{#if leadership_votes}}
+                                {{leadership_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='large-1 columns leaderboard'>
+                    <div class='large-1 columns'>
+                        {{#if innovation}}
+                        {{innovation}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns' >
+                        <input class='button  leaderboard-vote-button' id="6" type='button'  value='Vote!' />
+
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #ffd267">
+                                {{#if innovation_votes}}
+                                {{innovation_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='large-1 columns leaderboard'>
+                    <div class='large-1 columns'>
+                        {{#if industry}}
+                        {{industry}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns' >
+                        <input class='button  leaderboard-vote-button' id="7" type='button'  value='Vote!' />
+
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #a21c50">
+                                {{#if industry_votes}}
+                                {{industry_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='large-1 columns leaderboard'  style="border-right: none">
+                    <div class='large-1 columns'>
+                        {{#if grit}}
+                        {{grit}}
+                        {{else}}
+                        0
+                        {{/if}}
+                    </div>
+                    <div class='large-1 columns'>
+                        <input class='button  leaderboard-vote-button' id="8" type='button'  value='Vote!' />
+
+                        <div class="large-1 columns" >
+                            <div class="leaderboard-vote-number" style="background-color: #ffd267">
+                                {{#if grit_votes}}
+                                {{grit_votes}}
+                                {{else}}
+                                0
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+</script>

@@ -1,0 +1,34 @@
+<script id="preventrender22757" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <div class='connection'>
+                <div class='module-corner-actions'>
+                    <a>
+                        <!--<i class='icon-plus' id="iconAdd" title='Add'></i>-->
+                    </a>
+                </div>
+                <div class='talent-photo' style='cursor: pointer'>
+                    {{#if profile_image}}
+                    <img src='{{profile_image}}'/>
+                    {{else}}
+                    <img src='//placehold.it/200x200'/>
+                    {{/if}}
+
+                </div>
+                <div class='connection-info' style='cursor: pointer'>
+                    <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                    {{#if alma_mater}}
+                    <h6 class='thinheader'>College: {{alma_mater}}</h6>
+                    {{/if}}
+                    {{#if company}}
+                    <h6 class='thinheader'>Company: {{company}}</h6>
+                    {{/if}}
+                    {{#if gpa}}
+                    <h6 class='thinheader'>GPA: {{gpa}}</h6>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+    </article>
+</script>

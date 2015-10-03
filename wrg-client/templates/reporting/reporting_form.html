@@ -1,0 +1,74 @@
+<article>
+    <div class="original">
+        <div class="alumni-search">
+            <div class='large-12 columns module reporting-header'>
+                <h3 class='thinheader'>Reporting</h3>
+                Within this feature, you can track the success and career trajectory of your alumni. Additionally, by clicking
+                on the individual graphs, relevant alumni will populate at the bottom of the screen, with whom you can re-connect
+                to support the education of your current students.
+            </div>
+            <div class='large-12 columns'>
+                <h4 class='thinheader'>Show Reporting From: </h4>
+                <div id="fromToReporting">
+                    <div class='large-6 columns'>
+                        <select id="reporting-start" class="styled-select-reporting wrg-select">
+                            <option value="">Enter start year here</option>
+                        </select>
+                        to
+                        <select id="reporting-end" class="styled-select-reporting wrg-select">
+                            <option value="">Enter end year here</option>
+                        </select>
+                    </div>
+                    <div class='large-6 columns'>
+                        <form>
+                            <input id='go' type="submit" value="Go" class="button"/>
+                            <input id='view-all' type="submit" value="View All" class="button"/>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class='large-12 columns'>
+
+                <div class='large-6 columns'>
+                    <div class='pieContainer'>
+
+                        <p class="chartTitle">Employment status</p>
+                        <div id="chartEmployment"></div>
+                    </div>
+                </div>
+                <div class='large-6 columns'>
+                    <div class='pieContainer'>
+                        <p class="chartTitle">Alumni industries</p>
+                        <div id="chartIndustries"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='large-12 columns'>
+                <div class='large-12 columns'>
+                    <div class='barContainer'>
+                        <p class="chartTitle">Highest Level of Education</p>
+                        <div id="chartEducation"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='large-12 columns'>
+                <div class='large-12 columns'>
+                    <div class='barContainer'>
+                        <select id="arrange-skills" class="styled-select-reporting-skills wrg-select">
+                            <option value="">Arrange by</option>
+                            <option id="alph" value="0">Alphabetical Order</option>
+                            <option id="high" value="1">Highest Number</option>
+                            <option id="low" value="2">Lowest Number</option>
+                        </select>
+                        <span class="chartTitleSkills">Alumni Skills</span>
+                        <div id="chartSkills"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

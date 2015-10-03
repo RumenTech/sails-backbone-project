@@ -1,0 +1,280 @@
+<article>
+    <div class="original">
+        <div class='l-main'>
+            <div class='row'>
+                <div id="errorDiv" class='large-9 columns' style="display: none">
+                    <div class="large-12 columns module">
+                        <h2>You are not allowed to see this profile</h2>
+                    </div>
+                </div>
+                <div id="profileDiv" class="large-9 columns">
+                    <div class="large-12 columns">
+                        <div class="large-9 columns module">
+                            <div class='portfolio-intro'>
+                                <div class='row'>
+                                    <div class='large-3 columns'>
+                                        {{#if profile_image}}
+                                        <img src='{{profile_image}}' width="180px">
+                                        {{else}}
+                                        <img src='//placehold.it/180x180'>
+                                        {{/if}}
+                                    </div>
+                                    <div class='large-9 columns'>
+                                        <header>
+                                            <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                                            <h6 class='thinheader'>Studied {{major}} at {{alma_mater}}</h6>
+                                        </header>
+                                        <div class='portfolio-extra'>
+                                            <h5 class='thinheader'>{{job_title}}, {{company}}</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row alumni-story'>
+                                <div class='large-12 columns'>
+                                    <h6 class='specialheader'>What are your typical day-to-day-activities in your career?</h6>
+
+                                    <p>{{activities}}</p>
+                                    <h6 class='specialheader'>What process did you go through to enter your position and what
+                                        experiences or skills made you stand out versus other applicants?</h6>
+
+                                    <p>{{advice}}</p>
+                                    <h6 class='specialheader'>When I was a student, I wish I had known ...</h6>
+
+                                    <p>{{hindsight}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{#if experiences}}
+                    <div class='large-12 columns'>
+                        <div class='large-12 columns module' style="margin-top: 0%">
+                            <header class='module-header'>
+                                <h4>
+                                    <span>Experience Points</span>
+                                </h4>
+                            </header>
+                            <div class='experience-container'>
+                                <table class='experience-points'>
+                                    <tbody>
+                                    <tr>
+                                        <th><i class='experience-icon icon-intern-coop' aria-hidden='true'></i>Internship/Co-op</th>
+                                        <td>
+                                            <div class='progress intern-coop'>
+                                                <div class='meter' style='width:{{percent_0}}'></div>
+                                                <span class='meter-label'>{{number_0}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class='experience-icon icon-community-service' aria-hidden='true'></i>Community Service</th>
+                                        <td>
+                                            <div class='progress community-service'>
+                                                <div class='meter' style='width: {{percent_1}}'></div>
+                                                <span class='meter-label'>{{number_1}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th data-tooltip data-width='200'
+                                            title="For example, joining Toastmasters or your school's public speaking club"><i
+                                                class='experience-icon icon-public-speaking' aria-hidden='true'></i>Public Speaking
+                                        </th>
+                                        <td>
+                                            <div class='progress public-speaking'>
+                                                <div class='meter' style='width: {{percent_2}}'></div>
+                                                <span class='meter-label'>{{number_2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class='experience-icon icon-research' aria-hidden='true'></i>Research</th>
+                                        <td>
+                                            <div class='progress research'>
+                                                <div class='meter' style='width:{{percent_3}}'></div>
+                                                <span class='meter-label'>{{number_3}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class='experience-icon icon-leadership' aria-hidden='true'></i>Leadership</th>
+                                        <td>
+                                            <div class='progress leadership'>
+                                                <div class='meter' style='width: {{percent_4}}'></div>
+                                                <span class='meter-label'>{{number_4}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class='experience-icon icon-innovation' aria-hidden='true'></i>Innovation</th>
+                                        <td>
+                                            <div class='progress innovation'>
+                                                <div class='meter' style='width: {{percent_5}}'></div>
+                                                <span class='meter-label'>{{number_5}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class='experience-icon icon-industry-outreach' aria-hidden='true'></i>Industry Outreach</th>
+                                        <td>
+                                            <div class='progress industry-outreach'>
+                                                <div class='meter' style='width: {{percent_6}}'></div>
+                                                <span class='meter-label'>{{number_6}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class='experience-icon icon-innovation' aria-hidden='true'></i>Grit</th>
+                                        <td>
+                                            <div class='progress grit'>
+                                                <div class='meter' style='width: {{percent_7}}'></div>
+                                                <span class='meter-label'>{{number_7}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class='experience-grid'>
+                                    <div class='divider' style='left: 11%;'></div>
+                                    <div class='divider' style='left: 22%;'></div>
+                                    <div class='divider' style='left: 33%;'></div>
+                                    <div class='divider' style='left: 44%;'></div>
+                                    <div class='divider' style='left: 55%;'></div>
+                                    <div class='divider' style='left: 66%;'></div>
+                                    <div class='divider' style='left: 77%;'></div>
+                                    <div class='divider' style='left: 88%;'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experienceDiv" class='large-12 columns'>
+                        <div class='large-12 columns module' style="margin-top: 0%">
+                            <h4>
+                                <span>Experiences</span>
+                            </h4>
+                            {{#if experiences}}
+                            {{#each experiences}}
+                            <h5 class='thinheader'><strong>{{title}}</strong>, {{organization}} ({{start}} - {{end}})</h5>
+
+                            <p>{{description}}</p>
+                            {{#if media}}
+                            <div class="mediaExperienceRepresentation">
+                                <ul style=''>
+                                    {{#each media}}
+                                    {{#if data}}
+                                    {{#if id_video}}
+                                    <li>
+                                        <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}" title="{{name}}"
+                                                                                           src="//img.youtube.com/vi/{{id_video}}/1.jpg"
+                                                                                           style="width: 78px; height: 78px;"></a>
+                                    </li>
+                                    {{else}}
+                                    <li>
+                                        <a class='project-view' index="{{showIndex}}"><img id="media-{{id}}" title="{{name}}" src='{{data}}'
+                                                                                           style="width: 78px; height: 78px;"></a>
+                                    </li>
+                                    {{/if}}
+                                    {{/if}}
+                                    {{/each}}
+                                </ul>
+                            </div>
+                            {{/if}}
+                            {{/each}}
+                            {{/if}}
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    <div id="skillsDiv" class='large-12 columns'>
+                        <div class='large-12 columns module' style="margin-top: 0%">
+                            <h4>
+                                <span>Skills</span>
+                            </h4>
+
+                            <div class='skills'>
+                                {{#if skills}}
+                                {{#each skills}}
+                                <dl class='skill-{{proficiency_level}}'>
+                                    <dt>{{name}}</dt>
+                                    <dd>{{proficiency_level}}</dd>
+                                </dl>
+                                {{/each}}
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+
+                    {{#if awards}}
+                    <div id="awardsDiv" class='large-12 columns'>
+                        <div class='large-12 columns module' style="margin-top: 0%">
+                            <header class='module-header'>
+                                <h4>
+                                    <span>Awards</span>
+                                </h4>
+                            </header>
+                            {{#if awards}}
+                            <ul class='portfolio-list award-list'>
+                                {{#each awards}}
+                                <h5>{{title}}</h5>
+
+                                <p>Presented by {{presentor}}</p>
+
+                                <p style='border-bottom:thin solid #6d6d6d; '>{{description}}</p>
+                                {{/each}}
+                            </ul>
+                            {{/if}}
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    {{#if connections}}
+                    <div id="connectionsDiv" class="large-12 columns">
+                        <div class="large-12 columns module" style="margin-top: 0%">
+                            <header class="module-header">
+                                <h4>
+                                    <span>Connections</span>
+                                </h4>
+                            </header>
+                            <ul class="connections large-block-grid-2">
+                                {{#each connections}}
+                                <li>
+                                    <div class="connection" userId="{{request_user_id}}" userRole="{{role}}">
+                                        <div class='connection-photo'>
+                                            {{#if profile_image}}
+                                            <img src='{{profile_image}}' class='small-connections'/>
+                                            {{else}}
+                                            <img src='//placehold.it/200x200'/>
+                                            {{/if}}
+                                        </div>
+                                        <div class='connection-info'>
+                                            <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                                            <h6 class='thinheader'>{{reducedInformation}}</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+
+                    </div>
+                    {{/if}}
+                    {{#if viewer}}
+                    <div class='row'>
+                        <div class='large-12 columns left' style='margin-left: 20px'>
+                            <input id="sendFriendRequest" class='button send-button' type='button' value='Send Friend Request'/>
+                        </div>
+                    </div>
+                    {{/if}}
+                </div>
+                <div id='sponsors-section' class='large-3 large-offset-9'></div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</article>

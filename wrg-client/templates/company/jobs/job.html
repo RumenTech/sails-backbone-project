@@ -1,0 +1,38 @@
+<script id="preventrender754527" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <div class="row">
+                <div class="large-12 columns job">
+                    <div class="large-2 columns">
+                        {{#if company_image}}
+                        <img class='jobImage' src="{{company_image}}">
+                        {{else}}
+                        <img class='jobImage' src="//placehold.it/80x80">
+                        {{/if}}
+                    </div>
+                    <div class="large-10 large-offset-2">
+                        <div class="module-corner-actions inline-list">
+                            <a>
+                                <i id="editJobdiv{{id}}" class='icon-edit tip-top' title='Edit'></i>
+                            </a>
+                            <a>
+                                <i id="deleteJob{{id}}" class='icon-delete tip-top' title='Delete'></i>
+                            </a>
+                        </div>
+                        <a id="viewJob">
+                            <div>
+                                <h5>{{job_title}}</h5>
+                            </div>
+                            <div>
+                                <label class="submittedBy">Submited by {{contact_name}}</label>
+                                <label class="postedOn">Posted on {{postedOn}}</label>
+                            </div>
+                            <label>{{{job_description_short}}}</label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</script>

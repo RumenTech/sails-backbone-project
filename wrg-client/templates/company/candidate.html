@@ -1,0 +1,40 @@
+<article>
+    <div class="original">
+        <div class="large-12 columns">
+            <div class="row">
+                {{#if first}}
+                <div id="div{{id}}" class="large-10 columns field" style="border-bottom: 1px solid #c1bcba;cursor: pointer;background-color: #00b3f0;">
+                    {{else}}
+                    <div id="div{{id}}" class="large-10 columns field" style="border-bottom: 1px solid #c1bcba;cursor: pointer;">
+                        {{/if}}
+                        {{reducedPosition}}
+                    </div>
+                    <div class="large-1 columns">
+                        {{#if first}}
+                        <i id="editCandidatediv{{id}}" style="display: block; cursor:pointer;"  class='icon-edit tip-top' title='Edit'></i>
+                        {{else}}
+                        <i id="editCandidatediv{{id}}" style="display: none; cursor:pointer;" class='icon-edit tip-top' title='Edit'></i>
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="" id="descriptiondiv{{id}}" style="display: none;">
+                    <div class="">
+
+                        <h5>Required Qualifications:</h5>
+                        <p>{{{description}}}</p>
+
+                        <h5>Preffered Qualifications:</h5>
+                        <p>{{{preffereddescription}}}</p>
+
+                        <h5>Preffered Skill Set:</h5>
+
+                        <div id="testing">{{skill_keywords}}</div>
+                        <div id="skillrepresentation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

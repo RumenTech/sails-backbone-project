@@ -1,0 +1,19 @@
+<script type="text/x-handlebars-template">
+    <td><i class='{{category_class}}' data-tooltip title='{{category_title}}'></i> {{note}}</td>
+    <td>{{createdAt}}</td>
+    <td>
+        {{#if finished}}
+            <span style="color:#428bca">Goal Met</span>
+        {{else}}
+            {{timeLeft}}
+        {{/if}}
+    </td>
+    <td>
+        {{#if finished}}
+            <a><i class="icon-plus tip-top add-experience"> Add Experience</i></a>
+        {{else}}
+            <a><i class="icon-edit tip-top"> Edit</i></a>
+            <a><i class="icon-delete tip-top"> Delete</i></a>
+        {{/if}}
+    </td>
+</script>

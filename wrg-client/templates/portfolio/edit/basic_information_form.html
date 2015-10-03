@@ -1,0 +1,180 @@
+<div class='reveal-modal medium' id='profile-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Profile Information</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='validation-messages large-12 columns'></div>
+    </div>
+    <form class='custom'>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row bottom-collapse'>
+                        <div class='large-6 columns'>
+                            <input id='first-name' placeholder='First Name' type='text'/>
+                        </div>
+                        <div class='large-6 columns'>
+                            <input id='last-name' placeholder='Last Name' type='text'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <div class="ui-widget">
+                                <label for="school"> </label>
+                                <input placeholder="School" id="school" type="text"/>
+                                <input id="searchSchoolsId" style='display:none'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <input id='major' placeholder='Major' type='text'/>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <select id='graduation-month' class="styled-select tk-museo-sans wrg-select">
+                                <option value=''>Grad Month</option>
+                                <option value='1'>January</option>
+                                <option value='2'>February</option>
+                                <option value='3'>March</option>
+                                <option value='4'>April</option>
+                                <option value='5'>May</option>
+                                <option value='6'>June</option>
+                                <option value='7'>July</option>
+                                <option value='8'>August</option>
+                                <option value='9'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                            </select>
+                        </div>
+                        <div class='large-6 columns'>
+                            <select id='graduation-year' class="styled-select tk-museo-sans wrg-select">
+                                <option value=''>Grad Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <input id='gpa' placeholder='GPA' type='text'/>
+                        </div>
+                    </div>
+
+                    <!--<div class='row bottom-collapse'>
+                        <div class='large-12 columns form-notice'>
+                            <p>This is only visible to recruiters.</p>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <input length='50' id='tagline' placeholder='Write your objective!' type='text'/>
+                        </div>
+                    </div>
+                    <div class='row bottom-collapse'>
+                        <div class='large-12 columns form-notice'>
+                            <p>50 character limit</p>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <input length='50' id='tagline_keywords' placeholder='Please write career objective keywords...' type='text'/>
+                        </div>
+                    </div>
+                    <div class='row bottom-collapse'>
+                        <div class='large-12 columns form-notice'>
+                            <p>50 character limit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div class='panel'>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <input class='url validator' id='personal-website' placeholder='Personal Website URL' type='text'/>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                  <span class='prefix radius'>
+                    <i class='icon-facebook'></i>
+                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='facebook-url' placeholder='Copy &amp; paste your URL'
+                                           type='text'/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                  <span class='prefix radius'>
+                    <i class='icon-twitter'></i>
+                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='twitter-url' placeholder='Copy &amp; paste your URL'
+                                           type='text'/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row bottom-collapse'>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                  <span class='prefix radius'>
+                    <i class='icon-google-plus'></i>
+                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='google-url' placeholder='Copy &amp; paste your URL'
+                                           type='text'/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='large-6 columns'>
+                            <div class='row collapse'>
+                                <div class='large-1 columns'>
+                  <span class='prefix radius'>
+                    <i class='icon-linkedin'></i>
+                  </span>
+                                </div>
+                                <div class='large-11 columns'>
+                                    <input class='url validator input-post' id='linkedin-url' placeholder='Copy &amp; paste your URL'
+                                           type='text'/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns form-actions'>
+                <input class='button save-button' type='button' value='Save'/>
+            </div>
+        </div>
+    </form>
+    <a class='close-reveal-modal'>×</a>
+</div>

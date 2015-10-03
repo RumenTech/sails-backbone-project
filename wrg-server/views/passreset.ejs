@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>	
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+body {
+    background-color: #C6F5F2;
+}
+#content { background-color:#C6F5F2; width:950px; min-height:550px; text-align:left; padding:20px;  }
+h1 {
+    padding:20px 10px 20px 10px;
+}
+h2 {
+    padding-left: 0px !important;
+}
+#header {
+    background-color: #CA410B !important;
+}
+.large { font-size:22px; }
+.orange { color:orange; }
+.italic { font-style:italic }
+.textmiddle {vertical-align:middle;}
+.padout { padding-left:25px; padding-right:25px; }
+.rounded-corners {
+     -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+}
+.rounded-corners-top {
+     -moz-border-top-radius: 40px;
+    -webkit-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+}
+.right {
+    float: right;
+}
+.scrolldown { padding-left:20px; color:#EDECE8; font-size:40px; font-weight:bold; vertical-align:middle;
+	text-shadow: #6374AB 2px 2px 2px;
+ }
+ .contentblock { margin: 0px 20px; }
+ .results { border: 1px solid blue; padding:20px; margin-top:20px; min-height:50px; }
+ .blue-bold { font-size:18px; font-weight:bold; color:blue; }
+
+ /* example styles for validation form demo */
+#passreset-form {
+    background: url("form-fieldset.gif") repeat-x scroll left bottom #F8FDEF;
+    border: 1px solid #DFDCDC;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 25px 50px 10px;
+    width: 440px;
+}
+
+#passreset-form .fieldgroup {
+    background: url("form-divider.gif") repeat-x scroll left top transparent;
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+}
+
+#passreset-form .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 110px;
+}
+
+#passreset-form .fieldgroup input, #passreset-form .fieldgroup textarea, #passreset-form .fieldgroup select {
+    float: right;
+    margin: 10px 0;
+    height: 25px;
+}
+
+#passreset-form .submit {
+    padding: 10px;
+    width: 220px;
+    height: 40px !important;
+}
+
+#passreset-form .fieldgroup label.error {
+    color: #FB3A3A;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+</style>
+
+<script type="text/javascript">
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {           
+            $("#passreset-form").validate({
+                rules: {          
+                  
+                    password: {
+                        required: true,
+                        minlength: 8
+                    },	
+					confirm_password: {
+						required: true,
+						minlength: 8,
+						equalTo: "#password"
+					}
+                },
+                messages: {
+                    firstname: "Please enter your firstname",
+                    lastname: "Please enter your lastname",
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 8 characters long"
+                    },
+                    email: "Please enter a valid email address",
+                    agree: "Please accept our policy"
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+        }
+    }   
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+
+})(jQuery, window, document);
+</script>
+
+</head>
+<body>
+<div id="page-wrap">
+<div id="content">
+
+<h1>WRG - Password recovery!!!</h1>
+
+<form action="/pwd/reset" method="post" id="passreset-form" novalidate="novalidate">
+    <h2>Password Reset</h2>
+    <div id="form-content">
+        <fieldset>           
+            <div class="fieldgroup">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password">
+            </div>
+			<div class="fieldgroup">
+				<label for="confirm_password">Confirm password</label>
+				<input id="confirm_password" name="confirm_password" type="password" />
+		  </div>
+		  
+		        <input type="hidden" name="val" value="<%= hash %>">
+                <input type="hidden" name="id" value="<%= user_id %>">
+            <div class="fieldgroup">               
+                <input type="submit" value="Reset Password" class="submit">
+            </div>
+        </fieldset>
+    </div>
+        <div class="fieldgroup">
+            <p>You do not want to be here? <a href="/localhost:7000">Get me out of here</a>.</p>
+        </div>
+</form>
+</div>
+</div>
+</div> 
+</body>
+</html>

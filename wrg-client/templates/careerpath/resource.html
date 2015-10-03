@@ -1,0 +1,36 @@
+<article>
+    <div class="original">
+        <div class='resource-container'>
+            {{#if allowDelete}}
+            <a><i class='glyphicon glyphicon-remove right' id='remove-resource' title='Remove' style="cursor: pointer;  margin-left: 5px"></i> </a>
+            {{/if}}
+            {{#if editable}}
+            <a><i class='glyphicon glyphicon-edit right'  id='edit-resource' title='Edit' style="cursor: pointer;"></i></a>
+            {{/if}}
+            {{#if_eq role "admin"}}
+            <a><i class='glyphicon glyphicon-remove right' id='remove-resource' title='Remove' style="cursor: pointer;  margin-left: 5px"></i> </a>
+            {{/if_eq}}
+            <h5 style='border-bottom: 1px solid'>{{title}}</h5>
+            <p>{{content}}</p>
+            <ul class='inline-list' style= 'list-style:none'>
+                {{#if voted}}
+                <li style="margin-left: 30px"><span id="{{id}}"  style="color: dodgerblue" class='glyphicon glyphicon-thumbs-up'></span></li>
+                {{else}}
+                <li style="margin-left: 30px"><span id="{{id}}"  class='glyphicon glyphicon-thumbs-up'></span></li>
+                {{/if}}
+                <li><label style='background-color: lightslategrey; max-width:70px; border-radius: 5px; color: white; padding-left: 3px; padding-right: 3px'>{{votes_sum}} Votes</label></li>
+                <li style='font-size: 12px;' class='right'> Posted by: {{userName}}</li>
+            </ul>
+            <input id='resourceComment' placeholder='Comment...' style='width: 100%' type='text'/>
+            <div class='row'>
+                <a id='viewComments' resId='{{id}}' class='right' style='padding-right: 20px'>View Comments ({{numberOfComments}})</a>
+            </div>
+
+        </div>
+        <div class='row' id='comments-container'>
+            <div id='comment-region-{{id}}'></div>
+        </div>
+
+    </div>
+
+</article>

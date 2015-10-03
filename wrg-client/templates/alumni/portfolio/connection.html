@@ -1,0 +1,22 @@
+<script id="preventrender75457" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <li>
+                <div class='connection' style="cursor:pointer">
+                    <div class='connection-photo'>
+                        {{#if profile_image}}
+                        <img src='{{profile_image}}' class='small-connections'/>
+                        {{else}}
+                        <img src='//placehold.it/200x200'/>
+                        {{/if}}
+                    </div>
+                    <div class='connection-info'>
+                        <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                        <h6 class='thinheader'>{{reducedInformation}}</h6>
+                    </div>
+                </div>
+            </li>
+        </div>
+
+    </article>
+</script>

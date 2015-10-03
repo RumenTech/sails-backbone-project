@@ -1,0 +1,94 @@
+<article>
+    <div class="original">
+        <div class="alumni-search">
+            <header>
+            </header>
+            <div class='row'>
+                <div class='validation-messages large-12 columns'></div>
+            </div>
+            <div style=' '>
+                <div class='module' id="searchCriteria">
+                    <div class='large-12 columns'>
+                        <form style="padding-top: 10px">
+                            <div class='row'>
+
+                            </div>
+                            <div class='row'>
+                                <div class='large-12 columns'>
+                                    <input id="talent_skill" name='talent_skill' placeholder='Comma-separated list of skills without blank spaces' type='text'/>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='large-6 columns'>
+                                    <input id="name" name='name' placeholder='Search for Individuals' type='text'/>
+                                </div>
+                                <div class='large-6 columns'>
+                                    <input id="company" name='company' placeholder='Company' type='text'/>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='large-6 columns'>
+                                    <input id="school" name='school' placeholder='School' type='text'/>
+                                </div>
+                                <div class='large-6 columns'>
+                                    <input id="major" name='major' placeholder='Major' type='text'/>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='large-6 columns'>
+                                    <input id="talent_gpa" name='talent_gpa' placeholder='GPA (min)' type='text'/>
+                                </div>
+                                <div class='large-6 columns'>
+                                    <input id="talent_job_title" name='talent_job_title' placeholder='Job Title' type='text'/>
+                                </div>
+                            </div>
+                            <div id="exp-container" class='row'>
+                                <div class='large-6 columns'>
+                                    <select id='experience_criteria' class="styled-select-time tk-museo-sans wrg-select">
+                                        <option value="">Experience criteria</option>
+                                        <option value="1">Internship/Co-op</option>
+                                        <option value="2">Community Service</option>
+                                        <option value="3">Public Speaking</option>
+                                        <option value="4">Research</option>
+                                        <option value="5">Leadership</option>
+                                        <option value="6">Innovation</option>
+                                        <option value="7">Industry Outreach</option>
+                                    </select>
+                                </div>
+                                <div class='large-6 columns'>
+                                    <input style="width: 90%" id="experience_points" name='experience_points' placeholder='Minimum number of points' type='text'/>
+                                    <a><i  id="add-criteria" style="margin-top: -45px; font-size: 25px" class="icon-plus right" title='Submit experience filter'></i></a>
+                                </div>
+                                <div class='large-12 columns'>
+                                    <ul id="added-criterias" style="margin-left: 15px" >
+                                        {{#each experiences}}
+                                        <li>{{category_text}}: {{points}}</li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                                <div class='large-12 columns'>
+                                    <input id="criteria_name" name='criteria_name' placeholder='Please enter criteria name (e.g. Senior Designer, Finance Dude, etc.)' type='text'/>
+                                </div>
+                            </div>
+
+                            <div class='row bottom-collapse'>
+                                <div class='large-6 columns left'>
+                                    <input class='button save-criteria' type='button' value='Save criteria'/>
+                                </div>
+                                <div class='large-6 columns right'>
+                                    <input class='button clear-search' type='button' value='Clear search'/>
+                                    <input class='button filter' type='button' value='Search'/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id='filter-search-criterias'></div>
+        </div>
+    </div>
+
+
+</article>

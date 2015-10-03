@@ -1,0 +1,51 @@
+<div>
+    <div class="original">
+        <header class='l-header'>
+            <div class='row'>
+                <nav class='settings-nav large-2 push-10 columns'>
+                    <div class='settings-nav-inner'>
+                        <div class='beta-tag'>Beta</div>
+                        <a data-dropdown='settings-dropdown'>
+                            <i class="icon-settings"></i>
+                        </a>
+                        <ul id='settings-dropdown' class='f-dropdown'  data-dropdown-content>
+                            <li>
+                                <a href='#settings'>Settings</a>
+                            </li>
+                            <li>
+                                <a href='#logout'>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class='large-10 pull-2 columns'>
+                    <nav class='main-nav' role='main'>
+                        <a href='/'>
+                            <img class="logo" src="img/logo-small.png" />
+                        </a>
+                        <div class='main-nav-inner'>
+                            <ul class='inline-list'>
+                                <li>
+                                    <a href='#college'>Profile</a>
+                                </li>
+                                <li>
+                                    <a href='#reporting'>Reporting</a>
+                                </li>
+                                <li>
+                                    <a href='#career_path'>Career Path</a>
+                                </li>
+                                <li>
+                                    {{#if numberOfMessages}}
+                                    <span class='message-number'>{{numberOfMessages}}</span>
+                                    {{/if}}
+                                    <a href='#messages' class="glyphicon glyphicon-envelope"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+</div>

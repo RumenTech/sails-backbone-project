@@ -1,0 +1,48 @@
+<div class="module">
+    {{#if friendsList}}
+    <small class="pull-right">
+        <a href="#" data-hull-action="selectAll">Select all</a>
+        &nbsp;|&nbsp;
+        <a href="#" data-hull-action="unselectAll">Unselect all</a>
+    </small>
+    {{/if}}
+    <h5 class="panel-title">{{fallback options.title "Select friends and send them the invitation"}}</h5>
+
+    <div class="panel-body">
+        {{#if loggedIn.facebook}}
+        <form>
+            <div class="row">
+                <textarea id="invitationMessage" name="message" class="text-size-fbmessage" rows="3" placeholder="{{fallback options.placeholder "..."}}">{{options.message}}
+                </textarea>
+                <hr/>
+            </div>
+            <input type="search" id="friendsearch" placeholder="Search Friends" style="width: 190px; font-size: 14px;" title="Search your friends from the list..."> </input>
+            {{#if friendsList}}
+            <div id="friendholder" class="users-grid hidden">
+                {{#grid friendsList columns}}
+                <div id="friends-list-{{id}}" class="mediafb form-control" data-friend="{{id}}"
+                     data-friend-name="{{downcase name}}">
+
+                    <label for="friend-selected-{{id}}"><img style="width: 30px;" src="{{picture.data.url}}">
+                        <h7 style="display: inline-block"> &nbsp{{name}}</h7>
+                        </img>  <input type="checkbox" style="opacity:0; padding-bottom: 1px; display: inline-block"
+                                       name="friends[]" value="{{id}}"
+                                       id="friend-selected-{{id}}"/></label>
+                    <label for="friend-selected-{{id}}">
+                    </label>
+                </div>
+                {{/grid}}
+            </div>
+            <hr/>
+            {{/if}}
+            <div class="row">
+                <input class="button save-button send-button" type="submit" name="method" value="Send Invitation"/>
+            </div>
+        </form>
+        {{else}}
+        <button class="btn btn-primary" data-hull-action="loginWithFacebook">
+            Login with Facebook
+        </button>
+        {{/if}}
+    </div>
+</div>

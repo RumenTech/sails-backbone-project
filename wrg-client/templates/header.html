@@ -1,0 +1,115 @@
+<div>
+    <div class="original">
+        <header class='l-header'>
+            <div class='row'>
+                <nav class='settings-nav large-2 push-10 columns'>
+                    <div class='settings-nav-inner'>
+                        <div class='beta-tag'>Beta</div>
+                        <a data-dropdown='settings-dropdown'>
+                            <i class="icon-settings"></i>
+                        </a>
+                        <ul id='settings-dropdown' class='f-dropdown' data-dropdown-content>
+                            <li>
+                                <a href='#settings'>Settings</a>
+                            </li>
+                            <li>
+                                <a href='#logout'>Logout</a>
+                            </li>
+                        </ul>
+                        <ul id='dashboard-dropdown' class='f-dropdown' data-dropdown-content>
+                            <li>
+                                <a href='#dashboard'>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href='#feed'>Activity Feed</a>
+                            </li>
+                        </ul>
+                        <ul id='portfolio-dropdown' class='f-dropdown' data-dropdown-content>
+                            <li>
+                                <a href='#portfolio'>My Portfolio</a>
+                            </li>
+                            <li>
+                                <a href='#leaderboard'>Leaderboard</a>
+                            </li>
+                        </ul>
+                        <ul id='connect-dropdown' class='f-dropdown' data-dropdown-content>
+                            <li>
+                                <a href='#friends/friend'>Find Friends</a>
+                            </li>
+                            <li>
+                                <a href='#find_groups/wrggroups'>Find Groups</a>
+                            </li>
+                            <li>
+                                <a href='#alumni'>Alumni Success Stories</a>
+                            </li>
+                        </ul>
+                        <ul id='career-dropdown' class='f-dropdown' data-dropdown-content>
+                            <li>
+                                <a href='#career_path'>Career Path</a>
+                            </li>
+                            <li>
+                                <a href='#find_companies'>Find Companies</a>
+                            </li>
+                            <li>
+                                <a href="#find_colleges">Find Colleges</a>
+                            </li>
+                            <li>
+                                <a href='#jobs_student'>Jobs/Internships</a>
+                            </li>
+                            <li>
+                                <a href='#challenges_student'>WRG Challenges</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+                <div class='large-12  columns'>
+                    <nav class='main-nav' role='main'>
+                        <a href='/'>
+                            <img class="logo" src="img/logo-small.png"/>
+                        </a>
+                        <div class='main-nav-inner'>
+                            <ul class='inline-list'>
+                                <li>
+                                    <div class='settings-nav-inner'>
+                                        <a data-dropdown='dashboard-dropdown'>
+                                            Dashboard
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class='settings-nav-inner'>
+                                        <a data-dropdown='portfolio-dropdown'>
+                                            Portfolio
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class='settings-nav-inner'>
+                                        <a data-dropdown='connect-dropdown'>
+                                            Connect
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class='settings-nav-inner'>
+                                        <a data-dropdown='career-dropdown'>
+                                            Career
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    {{#if numberOfMessages}}
+                                    <span class='message-number'>{{numberOfMessages}}</span>
+                                    {{/if}}
+                                    <a href='#messages' class="glyphicon glyphicon-envelope"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+</div>

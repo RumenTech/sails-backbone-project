@@ -1,0 +1,27 @@
+<script id="preventrender454" type="text/x-handlebars-template">
+    <article>
+        <div class="original">
+            <div class='connection'>
+                <div class='module-corner-actions'>
+                    <a>
+                        <i class='icon-plus' id="iconAdd" title='Add'></i>
+                    </a>
+                </div>
+                <a id="friend">
+                    <div class='connection-photo'>
+                        {{#if profile_image}}
+                        <img class='small-friends' src='{{profile_image}}'/>
+                        {{else}}
+                        <img src='//placehold.it/200x200'/>
+                        {{/if}}
+                    </div>
+                    <div class='connection-info'>
+                        <h3 class='thinheader'>{{first_name}} {{last_name}}</h3>
+                        <h6 class='thinheader'>{{reducedInformation}}</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </article>
+</script>

@@ -1,0 +1,52 @@
+<article>
+    <div class="original">
+        <div class='large-12 columns module'>
+            <div class='module-corner-actions'>
+                <a>
+                    <i class="icon-envelope tip-top" id="groupMessage" title="Send group message" style="display: none"></i>
+                </a>
+            </div>
+            <header class='module-header'>
+                <h6>
+                    {{numberOfUsers}} members
+                </h6>
+            </header>
+            <div class="row">
+                <div class='large-12 columns' style="margin-bottom: 10px;">
+                    <div class='mediaGroupsRepresentation'>
+                        <ul id="groupImages" style="list-style:none;"></ul>
+                    </div>
+                </div>
+            </div>
+
+            {{#if_eq role "admin"}}
+            <div class='row'>
+                <div class='large-12 columns' style="margin-top: 10px; margin-bottom: 10px">
+                    <div class="newModerator">
+                        Add Moderator
+                        <a>
+                            <i class='icon-plus tip-top' id="newModerator" title='Add'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{/if_eq}}
+
+            {{#if_eq role "admin"}}
+            <div class='row'>
+                <div class='large-12 columns' style="margin-top: 10px; margin-bottom: 10px">
+                    <div class="newModerator">
+                        Add Administrator
+                        <a>
+                            <i class='icon-plus tip-top' id="newAdministrator" title='Add'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{/if_eq}}
+
+        </div>
+
+    </div>
+
+</article>

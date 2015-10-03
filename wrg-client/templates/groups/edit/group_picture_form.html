@@ -1,0 +1,43 @@
+<div class='reveal-modal large' id='photo-modal'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <h2 class='thinheader'>Group Picture</h2>
+        </div>
+    </div>
+    <form id="imgform" action="{{imageManipulationEndPoint}}" method="post" enctype="multipart/form-data">
+        <div class='row'>
+            <div class='validation-messages large-12 columns' id='validation-messages'></div>
+        </div>
+        <div class='row'>
+            <div class='large-12 columns'>
+                <div id="profileImgContainer" class="large-3 columns">
+                    <img src='{{profile_image}}' id='profile-img' style="width: 180px; height: 180px;">
+                    <input type="hidden" id='profile-image' value='{{profile_image}}'>
+                    <input id='file-image' accept="image/*" name="image" type='file' style="margin-top: 10px">
+                    <input id="uploadFiles" type="submit" style="visibility:hidden;" value="Upload File to Server">
+                </div>
+                <div id="loader"></div>
+                <div id="removeContainer" class='large-9 columns right'>
+                    <input id='removephoto' class='button' value='Remove Photo' type='button' style="margin-top: 10%"/>
+                </div>
+                <div id="cropContainer" class="large-12 columns center" style="display: none">
+                    <p>Select cropping for your image</p>
+                    <img id="cropImage">
+                    <div class='row' style="padding-top: 15px">
+                        <input class='button' type="button" id='finalcrop' value='Crop Image'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  id="saveContainer" class='row'>
+            <div class='large-12 columns form-actions'>
+                <input class='button save-button' type='button' value='Save' />
+            </div>
+        </div>
+    </form>
+    <!-- <div class="progress">
+         <div class="bar"></div >
+         <div class="percent">0%</div >
+     </div>
+     <div id="status"></div>-->
+</div>

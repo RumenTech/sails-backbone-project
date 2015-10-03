@@ -1,0 +1,39 @@
+<div class="original">
+    <div style="padding-left: 50px" >
+        <div class="large-12 columns" style=' background: #f4f1f0;' id="comment-{{id}}" >
+            <div class="large-2 columns"   style='padding-left:50px'>
+                {{#if  profileImage}}
+                <img id="imageSpinner-{{id}}" title="{{firstName}} {{lastName}}" class="commentUserPostImage" src="{{profileImage}}"/> </img>
+                {{else}}
+                <img id="imageSpinner-{{id}}" title="{{firstName}} {{lastName}}" class="commentUserPostImage" src='//placehold.it/80x80'/> </img>
+                {{/if}}
+            </div>
+            <div id="commentCell{{id}}" class="large-8 columns">
+                <textarea class="inputCommentOnLoad" id="contentHolder-{{id}}" type="text" style="overflow: hidden; resize: none" readonly>{{content}}</textarea>
+            </div>
+            <div class="large-2 columns">
+                {{#if_eq sessionId user_id}}
+                <a>
+                    <div id="delete-{{id}}" class="commentDelete">Delete</div>
+                </a>
+                <a>
+                    <div id="edit-{{id}}" class="commentEdit">Edit</div>
+                </a>
+                {{else}} {{#if_eq role "admin"}}
+                <a>
+                    <div id="delete-{{id}}" class="commentDelete">Delete</div>
+                </a>
+                {{else}} {{#if_eq role "moderator"}}
+                <a>
+                    <div id="delete-{{id}}" class="commentDelete">Delete</div>
+                </a>
+                {{/if_eq}}
+                {{/if_eq}}
+                {{/if_eq}}
+                <a>
+                    <div id="saveEditComment-{{id}}" class="saveEditCommentButtonDefaultState commentEditSaver">Save</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

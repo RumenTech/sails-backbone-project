@@ -1,0 +1,27 @@
+{
+	"theme" : "dark", 
+	"ui":2000, 
+	"tgt":2080, 
+	"do":[], 
+	"no":[], 
+	"editors" : { 
+		"darwin":{
+			"sublime3":{
+				"bin":"/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl",
+				"args":["$file:$line"]
+			},
+			"sublime2":{
+				"bin":"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl",
+				"args":["$file:$line"]
+			},
+			"textmate":{
+				"bin":"/Applications/TextMate.app/Contents/Resources/mate",
+				"args":["$file","--line","$line"]
+			}
+		},
+		"win32":{},
+		"sunos":{},
+		"linux":{},
+		"freebsd":{}
+	}
+}

@@ -1,0 +1,31 @@
+<article>
+    <div class="original">
+        <div class="large-12 columns job">
+            <div class="large-2 columns">
+                {{#if applicantimage}}
+                <img class='applicantIndexImage' src="{{applicantimage}}">
+                {{else}}
+                <img class='applicantIndexImage' src="//placehold.it/80x80">
+                {{/if}}
+            </div>
+            <div class="large-10 large-offset-2">
+                <a id="checkApplicant">
+                    <div>
+                        <h5>{{first_name}} {{last_name}}</h5>
+                    </div>
+                    {{#if cover_letter}}
+                    <a class='submittedBy reply-message' href='{{cover_letter}}' target="_blank" >Cover Letter</a>
+                    {{/if}}
+                    {{#if is_responded}}
+                    <div class="row">
+                        <label class="postedOn" style="display: block; color:green">Responded</label>
+                    </div>
+                    {{else}}
+                    <input type="button" class="postedOn button respondButton" id="respondJob" value="Respond">
+                    {{/if}}
+                </a>
+            </div>
+        </div>
+    </div>
+
+</article>
